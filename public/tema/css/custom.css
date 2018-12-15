@@ -1,0 +1,14 @@
+/* your styles go here */
+
+.miBorder{
+padding: 20px;
+}
+.bg-primary{
+color: white;
+}
+.navbar-default{
+     background-color: blue;
+}
+.navbar-inverse {
+    color: blue;
+}
