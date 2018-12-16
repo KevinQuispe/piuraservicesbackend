@@ -16,7 +16,7 @@ class ContactosController extends Controller
     public function index()
     {
         $reclamos = DB::table('contactos')->where('entidadempresa_id','4')->get();        
-        return view('serviciospiura/empresaclaro/infocontactos.listainfocontactos',compact('reclamos'));
+        return view('serviciospiura.empresaclaro.infocontactos.listainfocontactos',compact('reclamos'));
     }
 
  

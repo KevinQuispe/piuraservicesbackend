@@ -47,7 +47,7 @@ Route::resource('serviciospiura/empresaclaro/contactos', 'Admininfo\infoclaro\Co
 Route::resource('serviciospiura/empresaentel/listar', 'Admininfo\infoentel\EntelController');
 Route::resource('serviciospiura/empresaentel/reclamos', 'Admininfo\infoentel\ReclamosController');
 Route::resource('serviciospiura/empresaentel/tramites', 'Admininfo\infoentel\TramitesController');
-Route::resource('serviciospiura/empresaentel/contactos5', 'Admininfo\infoentel\ContactosController');
+Route::resource('serviciospiura/empresaentel/contactos', 'Admininfo\infoentel\ContactosController');
 //rutas para crear usuarios
 Route::resource('serviciospiura/usuarioempresa', 'Consultas\UsuarioEmpresaController');
 

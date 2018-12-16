@@ -29,9 +29,11 @@
           <thead class="thead-inverse">
             <tr>
               <th class="text-center">#</th>
-              <th>Nombre</th>
+              <th>Nombre Empresa</th>
+              <th>Direccion</th>
               <th>Telefono</th>
-              <th>Descripcion</th>
+              <th>Horario</th>
+              <th>Tipo Atención</th>
               <th>Acciones</th>
             </tr>
           </thead>
@@ -42,6 +44,8 @@
                   <td>{{$reclamos->nombreempresa}}</td>
                   <td>{{$reclamos->direccion}}</td>
                   <td>{{$reclamos->telefono}}</td>
+                  <td>{{$reclamos->horario}}</td>
+                  <td>{{$reclamos->tipoatencion}}</td>
                   <td class="text-center">
                     <a href="{{action('Admininfo\infoenosa\ContactosController@edit', $reclamos->id)}}" class="btn btn-outline-primary btn-sm ion-edit" title="Editar">Editar</a>
                     <a href="{{action('Admininfo\infoenosa\ContactosController@show', $reclamos->id)}}" class="btn btn-outline-danger btn-sm ion-android-delete" title="Eliminar">Eliminar</a>

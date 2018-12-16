@@ -29,9 +29,11 @@
           <thead class="thead-inverse">
             <tr>
               <th class="text-center">#</th>
-              <th>Nombre</th>
+              <th>Nombre Empresa</th>
+              <th>Dirección</th>
               <th>Telefono</th>
-              <th>Descripcion</th>
+              <th>Horario</th>
+              <th>Tipo de atención</th>
               <th>Acciones</th>
             </tr>
           </thead>
@@ -40,8 +42,10 @@
                 <tr class="fadeIn animated">
                   <th scope="row" class="text-center">{{$index+1}}</th>
                   <td>{{$reclamos->nombreempresa}}</td>
-                  <td>{{$reclamos->descripcion}}</td>
-                  <td>{{$reclamos->numero}}</td>
+                  <td>{{$reclamos->direccion}}</td>
+                  <td>{{$reclamos->telefono}}</td>
+                  <td>{{$reclamos->horario}}</td>
+                  <td>{{$reclamos->tipoatencion}}</td>
                   <td class="text-center">
                     <a href="{{action('Admininfo\infoclaro\ContactosController@edit', $reclamos->id)}}" class="btn btn-outline-primary btn-sm ion-edit" title="Editar">Editar</a>
                     <a href="{{action('Admininfo\infoclaro\ContactosController@show', $reclamos->id)}}" class="btn btn-outline-danger btn-sm ion-android-delete" title="Eliminar">Eliminar</a>

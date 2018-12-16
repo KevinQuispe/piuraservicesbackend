@@ -13,8 +13,7 @@
         <!-- Styles -->
         <style>
             html, body {
-                background-image:url('../tema/img/fondo.png');
-                background-color: #b2dfdb;
+                background-color: #a5d6a7;
                 color: gray;
                 font-family: 'Raleway', sans-serif;
                 font-weight: 100;
@@ -49,15 +48,18 @@
             .title {
                 font-size: 84px;
             }
-
+            
             .links > a {
-                color: #636b6f;
+                color: gray;
                 padding: 0 25px;
-                font-size: 12px;
+                font-size: 14px;
                 font-weight: 600;
                 letter-spacing: .1rem;
                 text-decoration: none;
                 text-transform: uppercase;
+            }
+            .links > a:hover{
+                color:#000;
             }
 
             .m-b-md {

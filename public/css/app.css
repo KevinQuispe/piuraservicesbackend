@@ -6564,7 +6564,26 @@ button.close {
         display: none!important
     }
 }
+
 /* mis cambios*/
-.panel-body{
-background-color: #b2dfdb;
+body{
+    background-color: #a5d6a7;
 }
+.panel-body{
+      background-image:url('../tema/img/fondo.jpg');
+      height: 100%; 
+      /* Center and scale the image nicely  background-color:#00695c;*/
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: #000;
+    }
+    .navbar-nav>li>a{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        line-height: 22px;
+              
+    }
+    .navbar-inverse .navbar-brand{
+        color: white;
+    }

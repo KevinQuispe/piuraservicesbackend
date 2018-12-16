@@ -16,7 +16,7 @@ class ContactosController extends Controller
     public function index()
     {
         $reclamos = DB::table('contactos')->where('entidadempresa_id','3')->get();        
-        return view('serviciospiura/empresamovistar/infocontactos.listainfocontactos',compact('reclamos'));
+        return view('serviciospiura.empresamovistar.infocontactos.listainfocontactos',compact('reclamos'));
     }
 
  

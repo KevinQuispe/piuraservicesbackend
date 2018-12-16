@@ -30,8 +30,10 @@
             <tr>
               <th class="text-center">#</th>
               <th>Entidad</th>
-              <th>Numero</th>
-              <th>Direccion</th>
+              <th>Dirección</th>
+              <th>Telefono</th>
+              <th>Horario</th>
+              <th>Tipo Atencion</th>
               <th>Acciones</th>
             </tr>
           </thead>
@@ -40,8 +42,10 @@
                 <tr class="fadeIn animated">
                   <th scope="row" class="text-center">{{$index+1}}</th>
                   <td>{{$reclamo->nombreempresa}}</td>
-                  <td>{{$reclamo->telefono}}</td>
                   <td>{{$reclamo->direccion}}</td>
+                  <td>{{$reclamo->telefono}}</td>
+                  <td>{{$reclamo->horario}}</td>
+                  <td>{{$reclamo->tipoatencion}}</td>
                   <td class="text-center">
                     <a href="{{action('Admininfo\infoepsgrau\ContactosController@edit', $reclamo->id)}}" class="btn btn-outline-primary btn-sm ion-edit" title="Editar">Editar</a>
                     <a href="{{action('Admininfo\infoepsgrau\ContactosController@show', $reclamo->id)}}" class="btn btn-outline-danger btn-sm ion-android-delete" title="Eliminar">Eliminar</a>

@@ -17,8 +17,8 @@ class ContactosController extends Controller
     {
         try{
             $reclamos = \DB::table('contactos')->where('entidadempresa_id','1')->get();        
-            // echo($reclamos);
-            return view('serviciospiura.entidadepsgrau.inforeferencial.listainfocontactos',compact('reclamos'));        
+
+            return view('serviciospiura.entidadepsgrau.infocontactos.listainfocontactos',compact('reclamos'));        
         }catch(Exceprion $e){
             return $e;
     }
