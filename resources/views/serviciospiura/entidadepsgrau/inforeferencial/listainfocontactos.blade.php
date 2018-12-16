@@ -36,15 +36,15 @@
             </tr>
           </thead>
                 <tbody>
-                @foreach ($reclamos as $index=>$reclamos)
+                @foreach ($reclamos as $index=>$reclamo)
                 <tr class="fadeIn animated">
                   <th scope="row" class="text-center">{{$index+1}}</th>
-                  <td>{{$reclamos->nombreempresa}}</td>
-                  <td>{{$reclamos->telefono}}</td>
-                  <td>{{$reclamos->direccion}}</td>
+                  <td>{{$reclamo->nombreempresa}}</td>
+                  <td>{{$reclamo->telefono}}</td>
+                  <td>{{$reclamo->direccion}}</td>
                   <td class="text-center">
-                    <a href="" class="btn btn-outline-primary btn-sm ion-edit" title="Editar">Editar</a>
-                    <a href=" " class="btn btn-outline-danger btn-sm ion-android-delete" title="Eliminar">Eliminar</a>
+                    <a href="{{action('Admininfo\infoepsgrau\ContactosController@edit', $reclamo->id)}}" class="btn btn-outline-primary btn-sm ion-edit" title="Editar">Editar</a>
+                    <a href="{{action('Admininfo\infoepsgrau\ContactosController@show', $reclamo->id)}}" class="btn btn-outline-danger btn-sm ion-android-delete" title="Eliminar">Eliminar</a>
                     <a href=" " class="btn btn-outline-success btn-sm ion-android-search" title="Compare web scraping">Web Scraping</a>
                   </td>
                 </tr>
