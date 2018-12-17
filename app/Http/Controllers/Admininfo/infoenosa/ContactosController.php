@@ -33,7 +33,10 @@ class ContactosController extends Controller
        
         $this->validate($request, [
             'nombreempresa'=>'required',
-            'numero' => 'required',
+            'direccion' => 'required',
+            'telefono' => 'required',
+            'horario' => 'required',
+            'tipoatencion' => 'required',
             'entidadempresa_id'=>'required'
         ]);
     

@@ -21,17 +21,17 @@
             <div class="card-block">
               {!!Form::model($tramites, ['action'=>['Admininfo\infoepsgrau\TramitesController@update',$tramites->id],'method'=>'PUT'])!!}
               <div class="form-group">
-                <label class="form-control-label" for="name"><strong>IdEntidad</strong></label>
-                {!!form::select('entidadempresa_id', $empresaid,null,['class'=>'form-control'])!!}
-              </div>
+              <label class="form-control-label" for="name"><strong>IdEntidad</strong></label>
+              {!!form::select('entidadempresa_id', $empresaid,null,['class'=>'form-control'])!!}
+            </div>
+          <div class="form-group">
+              <label class="form-control-label" for="direccion"><strong>Nombre de trámite:</strong></label>
+              {!!form::text('nombre', null,['id'=>'nombre','class'=>'form-control','placeholder'=>'Nombre del trámite'])!!}
+            </div>
             <div class="form-group">
-                <label class="form-control-label" for="direccion"><strong>Nombre de trámite:</strong></label>
-                {!!form::text('nombre', null,['id'=>'nombre','class'=>'form-control','placeholder'=>'Nombre'])!!}
-              </div>
-              <div class="form-group">
-                <label class="form-control-label" for="telefono"><strong>Descripción:</strong></label>
-                {!!form::textarea('descripcion',null,['id'=>'descripcion','class'=>'form-control','placeholder'=>'descripcion'])!!}
-              </div>
+              <label class="form-control-label" for="telefono"><strong>Descripción:</strong></label>
+              {!!form::text('descripcion',null,['id'=>'descripcion','class'=>'form-control','placeholder'=>'descripcion del trámite'])!!}
+            </div>
               <div class="pull-right">
               <div class="form-group">
               {!!form::submit('Guardar',['name'=>'grabar','id'=>'grabar','content'=>'<span class="glyphicon glyphicon-floppy-disk">Guardar</span>',

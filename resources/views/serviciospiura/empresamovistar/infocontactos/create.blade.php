@@ -28,7 +28,7 @@
               </div>
               </br>
               <div class="form-group">
-                <label class="form-control-label col-md-4" for="name"><strong>Empresa:</strong></label>
+                <label class="form-control-label col-md-4" for="name"><strong>Nombre Empresa:</strong></label>
                 {!!form::text('nombreempresa', null,['id'=>'nombreempresa','class'=>'form-control offset  offset col-sm-12 col-md-6 col-lg-5','placeholder'=>'empresa'])!!}
             </div>
             </br>

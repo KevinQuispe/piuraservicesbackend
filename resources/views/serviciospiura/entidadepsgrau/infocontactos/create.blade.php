@@ -16,7 +16,7 @@
         <div class="offset col-md">
           <div class="card miBorder">
             <div class="card-header d-flex align-items-center bg-primary">
-              <h2 class="h1 display display">Registrar Contacto</h2>
+              <h2 class="h1 display display">Registrar Contacto EPS Grau S.A</h2>
             </div>
             <div class="card-block">
               <p>Nuevo contacto</p>
@@ -29,17 +29,27 @@
               </br>
               <div class="form-group">
                 <label class="form-control-label col-md-4" for="name"><strong>Empresa:</strong></label>
-                {!!form::text('nombreempresa', null,['id'=>'nombreempresa','class'=>'form-control offset  offset col-sm-12 col-md-6 col-lg-5','placeholder'=>'empresa'])!!}
+                {!!form::text('nombreempresa',null, ['id'=>'nombreempresa','class'=>'form-control offset  offset col-sm-12 col-md-6 col-lg-5','placeholder'=>'Ingrese nombre de la empresa'])!!}
             </div>
             </br>
             <div class="form-group">
-                <label class="form-control-label col-md-4" for="name"><strong>Descripcion:</strong></label>
-                {!!form::text('direccion', null,['id'=>'direccion','class'=>'form-control offset  offset col-sm-12 col-md-6 col-lg-5','placeholder'=>'Agregue aqui una pequeña descripcion'])!!}
+                <label class="form-control-label col-md-4" for="name"><strong>Dirección:</strong></label>
+                {!!form::text('direccion',null,['id'=>'direccion','class'=>'form-control offset  offset col-sm-12 col-md-6 col-lg-5','placeholder'=>'Ingrese dirección'])!!}
             </div>
             </br>
             <div class="form-group">
                 <label class="form-control-label col-md-4" for="name"><strong>Telefono:</strong></label>
-                {!!form::number('telefono', 'null',['id'=>'telefono','min'=>0,'class'=>'form-control offset  offset col-sm-12 col-md-6 col-lg-5','placeholder'=>'9999999999'])!!}
+                {!!form::text('telefono',null,['id'=>'telefono','class'=>'form-control offset  offset col-sm-12 col-md-6 col-lg-5','placeholder'=>'Ingrese numero telefonico'])!!}
+            </div>
+            <br>
+            <div class="form-group">
+                <label class="form-control-label col-md-4" for="name"><strong>Horario:</strong></label>
+                {!!form::text('horario',null,['id'=>'horario','class'=>'form-control offset  offset col-sm-12 col-md-6 col-lg-5','placeholder'=>'Ingrese horario de atención'])!!}
+            </div>
+            <br>
+            <div class="form-group">
+                <label class="form-control-label col-md-4" for="name"><strong>Tipo de atención:</strong></label>
+                {!!form::text('tipoatencion', null,['id'=>'tipoatencion','class'=>'form-control offset  offset col-sm-12 col-md-6 col-lg-5','placeholder'=>'Ingrese tipo de atención'])!!}
             </div>
             <br>
               

@@ -29,15 +29,14 @@
             </br>
             <div class="form-group">
                 <label class="form-control-label col-md-4" for="name"><strong>Nombre de trámite:</strong></label>
-                {!!form::text('nombre', null,['id'=>'nombre','class'=>'form-control offset  offset col-sm-12 col-md-6 col-lg-5','placeholder'=>'reclamos'])!!}
+                {!!form::text('nombre', null,['id'=>'nombre','class'=>'form-control offset  offset col-sm-12 col-md-6 col-lg-5','placeholder'=>'Ingrese nombre del trámite'])!!}
             </div>
             <br>
             <div class="form-group">
                 <label class="form-control-label col-md-4" for="name"><strong>Descripción:</strong></label>
-                {!!form::textarea('descripcion', null,['id'=>'descripcion','class'=>'form-control offset  offset col-sm-12 col-md-6 col-lg-5','placeholder'=>'Descripcion'])!!}
+                {!!form::textarea('descripcion', null,['id'=>'descripcion','class'=>'form-control offset  offset col-sm-12 col-md-6 col-lg-5','placeholder'=>'Descripción del trámite'])!!}
             </div>
             <br>
-             
               <div class="pull-right">
               <div class="form-group">
 

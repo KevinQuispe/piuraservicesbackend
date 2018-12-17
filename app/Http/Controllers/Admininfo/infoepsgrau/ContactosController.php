@@ -47,8 +47,7 @@ class ContactosController extends Controller
         return redirect()->action('Admininfo\infoepsgrau\ContactosController@index');
       
     }
-
-
+    
     public function show($id)
     {
         $empresaid= EntidadEmpresa::where('id', '1')->pluck('nombre','id'); 

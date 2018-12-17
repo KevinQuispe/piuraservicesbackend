@@ -23,22 +23,21 @@
               {!! Form::open(['action'=>'Admininfo\infoepsgrau\TramitesController@store','method'=>'POST'])!!}
               @include('serviciospiura.mensajes.mensajes')
               <div class="form-group">
-                <label class="form-control-label col-md-4" for="name"><strong>Idempresa</strong></label>
-                {!!form::select('entidadempresa_id', $empresaid,null,['class'=>'form-control'])!!}
-            </div>
-            </br>
-            <div class="form-group">
-                <label class="form-control-label col-md-4" for="name"><strong>Nombre:</strong></label>
-                {!!form::text('nombre', null,['id'=>'nombre','class'=>'form-control offset  offset col-sm-12 col-md-6 col-lg-5','placeholder'=>'reclamos'])!!}
-            </div>
-            <br>
-            <div class="form-group">
-                <label class="form-control-label col-md-4" for="name"><strong>Descripcion:</strong></label>
-                {!!form::textarea('descripcion', null,['id'=>'descripcion','class'=>'form-control offset  offset col-sm-12 col-md-6 col-lg-5','placeholder'=>'Descripcion'])!!}
-            </div>
-            <br>
-             
-              <div class="pull-right">
+              <label class="form-control-label col-md-4" for="name"><strong>Idempresa</strong></label>
+              {!!form::select('entidadempresa_id', $empresaid,null,['class'=>'form-control'])!!}
+          </div>
+          </br>
+          <div class="form-group">
+              <label class="form-control-label col-md-4" for="name"><strong>Nombre de trámite:</strong></label>
+              {!!form::text('nombre', null,['id'=>'nombre','class'=>'form-control offset  offset col-sm-12 col-md-6 col-lg-5','placeholder'=>'Ingrese nombre del trámite'])!!}
+          </div>
+          <br>
+          <div class="form-group">
+              <label class="form-control-label col-md-4" for="name"><strong>Descripción:</strong></label>
+              {!!form::textarea('descripcion', null,['id'=>'descripcion','class'=>'form-control offset  offset col-sm-12 col-md-6 col-lg-5','placeholder'=>'Descripción del trámite'])!!}
+          </div>
+          <br>
+            <div class="pull-right">
               <div class="form-group">
 
                 {!!form::submit('Guardar',['name'=>'grabar','id'=>'grabar','content'=>'

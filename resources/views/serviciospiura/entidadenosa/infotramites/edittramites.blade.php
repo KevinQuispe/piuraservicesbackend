@@ -26,11 +26,11 @@
               </div>
             <div class="form-group">
                 <label class="form-control-label" for="direccion"><strong>Nombre de trámite:</strong></label>
-                {!!form::text('nombre', null,['id'=>'nombre','class'=>'form-control','placeholder'=>'Nombre'])!!}
+                {!!form::text('nombre', null,['id'=>'nombre','class'=>'form-control','placeholder'=>'Nombre del trámite'])!!}
               </div>
               <div class="form-group">
                 <label class="form-control-label" for="telefono"><strong>Descripción:</strong></label>
-                {!!form::text('descripcion',null,['id'=>'descripcion','class'=>'form-control','placeholder'=>'descripcion'])!!}
+                {!!form::textarea('descripcion',null,['id'=>'descripcion','class'=>'form-control','placeholder'=>'descripcion del trámite'])!!}
               </div>
               <div class="pull-right">
               <div class="form-group">

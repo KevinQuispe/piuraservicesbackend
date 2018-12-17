@@ -20,7 +20,7 @@
               <h2 class="h1 display display"><strong style="color:#f00">Eliminar Entidad empresa:</strong></h2>
             </div>
             <div class="card-block">
-              <p>¿Desea eliminar datos de empresa?.</p>
+              <p>¿Desea eliminar datos  información referencial?.</p>
               {!!Form::open(['action'=>['Admininfo\infoepsgrau\EpsGrauController@destroy',$empresa->id],'method'=>'DELETE'])!!}
              
               <div class="form-group">

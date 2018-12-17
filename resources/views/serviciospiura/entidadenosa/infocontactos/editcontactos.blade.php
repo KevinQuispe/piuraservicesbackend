@@ -16,26 +16,34 @@
         <div class="offset-lg-2 col-lg-7">
           <div class="card miBorder">
             <div class="card-header d-flex align-items-center">
-              <h2 class="h1 display display">Editar Contacto:</h2>
+              <h2 class="h1 display display">Editar Contacto Enosa:</h2>
             </div>
             <div class="card-block">
               {!!Form::model($contactos, ['action'=>['Admininfo\infoenosa\ContactosController@update',$contactos->id],'method'=>'PUT'])!!}
               <div class="form-group">
-                <label class="form-control-label" for="name"><strong>IdEntidad</strong></label>
-                {!!form::select('entidadempresa_id', $empresaid,null,['class'=>'form-control'])!!}
-              </div>
-            <div class="form-group">
-                <label class="form-control-label" for="name"><strong>Empresa:</strong></label>
-                {!!form::text('nombreempresa', null,['id'=>'nombreempresa','class'=>'form-control','placeholder'=>'Nombre'])!!}
+              <label class="form-control-label" for="name"><strong>IdEntidad</strong></label>
+              {!!form::select('entidadempresa_id', $empresaid,null,['class'=>'form-control'])!!}
             </div>
             <div class="form-group">
-                <label class="form-control-label" for="name"><strong>Descripcion:</strong></label>
-                {!!form::text('descripcion', null,['id'=>'descripcion','class'=>'form-control','placeholder'=>'Nombre'])!!}
+              <label class="form-control-label" for="name"><strong>Nombre empresa:</strong></label>
+              {!!form::text('nombreempresa', null,['id'=>'nombreempresa','class'=>'form-control','placeholder'=>'Ingrese nombre de la empresa'])!!}
+          </div>
+          <div class="form-group">
+              <label class="form-control-label" for="name"><strong>Dirección:</strong></label>
+              {!!form::text('direccion', null,['id'=>'direccion','class'=>'form-control','placeholder'=>'Ingrese dirección de la empresa'])!!}
+          </div>
+            <div class="form-group">
+              <label class="form-control-label" for="name"><strong>Telefono:</strong></label>
+              {!!form::text('telefono',null,['id'=>'telefono','class'=>'form-control','placeholder'=>'teléfono'])!!}
             </div>
-              <div class="form-group">
-                <label class="form-control-label" for="name"><strong>Telefono:</strong></label>
-                {!!form::text('numero',null,['id'=>'numero','class'=>'form-control','placeholder'=>'teléfono'])!!}
-              </div>
+            <div class="form-group">
+              <label class="form-control-label" for="name"><strong>Horario de atención:</strong></label>
+              {!!form::text('horario',null,['id'=>'horario','class'=>'form-control','placeholder'=>'Ingrese horario de atención'])!!}
+            </div>
+            <div class="form-group">
+              <label class="form-control-label" for="name"><strong>Tipo de atención:</strong></label>
+              {!!form::text('tipoatencion',null,['id'=>'tipoatencion','class'=>'form-control','placeholder'=>'Ingrese tipo de atención'])!!}
+            </div>
               <div class="pull-right">
               <div class="form-group">
               {!!form::submit('Guardar',['name'=>'grabar','id'=>'grabar','content'=>'<span class="glyphicon glyphicon-floppy-disk">Guardar</span>',

@@ -22,7 +22,7 @@
         <h3 class="h5 display ion-paperclip fadeIn animated title ">Lista de contactos</h3>
       </div>
       <div class="card-block">
-      <a href="{{url('/serviciospiura/usuarioempresa/create')}}" class="btn btn-success btn-sm margenInf fadeIn animated ion-plus-round"> Nuevo</a> &nbsp;
+      <a href="{{url('/serviciospiura/entidadepsgrau/contactos/create')}}" class="btn btn-success btn-sm margenInf fadeIn animated ion-plus-round"> Nuevo</a> &nbsp;
       <a href="{{url('/serviciospiura/entidadepsgrau/listar')}}" class="btn btn-info pull-right btn-sm margenInf fadeIn animated ion-plus-round">Volver</a> &nbsp;
   
       <table class="table table-striped table-hover table-bordered" id="myTable">
@@ -49,7 +49,7 @@
                   <td class="text-center">
                     <a href="{{action('Admininfo\infoepsgrau\ContactosController@edit', $reclamo->id)}}" class="btn btn-outline-primary btn-sm ion-edit" title="Editar">Editar</a>
                     <a href="{{action('Admininfo\infoepsgrau\ContactosController@show', $reclamo->id)}}" class="btn btn-outline-danger btn-sm ion-android-delete" title="Eliminar">Eliminar</a>
-                    <a href=" " class="btn btn-outline-success btn-sm ion-android-search" title="Compare web scraping">Web Scraping</a>
+                    <!-- <a href=" " class="btn btn-outline-success btn-sm ion-android-search" title="Compare web scraping">Web Scraping</a> -->
                   </td>
                 </tr>
               @endforeach
