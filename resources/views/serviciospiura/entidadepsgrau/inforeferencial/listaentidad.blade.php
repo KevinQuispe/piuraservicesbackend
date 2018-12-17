@@ -49,11 +49,11 @@
                   <td>{{$empresa->telefono}}</td>
                   <td>{{$empresa->correo}}</td>
                   <td>{{$empresa->horario}}</td>
-                  <td> <a href="http://www.movistar.com.pe/" target="_blank" title="Open Web">{{$empresa->webentidad}}</a></td>
+                  <td> <a href="https://epsgrau.pe/webpage/desktop/views/" target="_blank" title="Open Web">{{$empresa->webentidad}}</a></td>
                   <td class="text-center">
                     <a href="{{action('Admininfo\infoepsgrau\EpsGrauController@edit', $empresa->id)}}" class="btn btn-outline-primary btn-sm ion-edit" title="Editar">Editar</a>
                     <a href="{{action('Admininfo\infoepsgrau\EpsGrauController@show', $empresa->id)}}" class="btn btn-outline-danger btn-sm ion-android-delete" title="Eliminar">Eliminar</a>
-                    <a href="{{url('serviciospiura/entidadepsgrau/scraping')}}" class="btn btn-outline-success btn-sm ion-android-search" title="Compare web scraping">Web Scraping</a>
+                    <!-- <a href="{{url('serviciospiura/entidadepsgrau/scraping')}}" class="btn btn-outline-success btn-sm ion-android-search" title="Compare web scraping">Web Scraping</a> -->
                   </td>
                 </tr>
               @endforeach

@@ -29,7 +29,7 @@
           <thead class="thead-inverse">
             <tr>
               <th class="text-center">#</th>
-              <th>Nombre</th>
+              <th>Nombre de trámite</th>
               <th>Despcripcion</th>
               <th>Acciones</th>
             </tr>

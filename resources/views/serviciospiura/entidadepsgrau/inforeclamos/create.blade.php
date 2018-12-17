@@ -19,7 +19,7 @@
               <h2 class="h1 display display">Registrar Reclamo</h2>
             </div>
             <div class="card-block">
-              <p>Registre su(s) reclamo(s)</p>
+              <p>Registrar datos de reclamo</p>
               {!! Form::open(['action'=>'Admininfo\infoepsgrau\ReclamosController@store','method'=>'POST'])!!}
               @include('serviciospiura.mensajes.mensajes')
               <div class="form-group">
@@ -28,13 +28,13 @@
               </div>
               </br>
               <div class="form-group">
-                <label class="form-control-label col-md-4" for="name"><strong>Nombre </strong></label>
-                {!!form::text('nombre', null,['id'=>'nombre','class'=>'form-control offset  offset col-sm-12 col-md-6 col-lg-5','placeholder'=>'reclamos'])!!}
+                <label class="form-control-label col-md-4" for="name"><strong>Nombre</strong></label>
+                {!!form::text('nombre', null,['id'=>'nombre','class'=>'form-control offset  offset col-sm-12 col-md-6 col-lg-5','placeholder'=>'Ingrese nombre del reclamo'])!!}
             </div>
             </br>
             <div class="form-group">
-                <label class="form-control-label col-md-4" for="name"><strong>Descripcion:</strong></label>
-                {!!form::textarea('descripcion', null,['id'=>'descripcion','class'=>'form-control offset  offset col-sm-12 col-md-6 col-lg-5','placeholder'=>'Descripcion'])!!}
+                <label class="form-control-label col-md-4" for="name"><strong>Descripción:</strong></label>
+                {!!form::textarea('descripcion', null,['id'=>'descripcion','class'=>'form-control offset  offset col-sm-12 col-md-6 col-lg-5','placeholder'=>'Ingrese descripcion del reclamo'])!!}
             </div>
             <br>
               

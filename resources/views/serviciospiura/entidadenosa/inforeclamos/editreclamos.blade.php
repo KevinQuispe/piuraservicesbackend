@@ -4,7 +4,7 @@
 <div class="breadcrumb-holder">
     <div class="container-fluid">
       <ul class="breadcrumb">
-        <li class="breadcrumb-item"><a href="{{url('/serviciospiura/entidadenosa/listar')}}">Usuarios</a></li>
+        <li class="breadcrumb-item"><a href="{{url('/serviciospiura/entidadenosa/listar')}}">Entidad</a></li>
         <li class="breadcrumb-item active">Nuevo</li>
       </ul>
     </div>
@@ -25,11 +25,11 @@
                 {!!form::select('entidadempresa_id', $empresaid,null,['class'=>'form-control'])!!}
             </div>
             <div class="form-group">
-                <label class="form-control-label" for="direccion"><strong>Nombre:</strong></label>
+                <label class="form-control-label" for="direccion"><strong>Nombre de reclamo:</strong></label>
                 {!!form::text('nombre', null,['id'=>'nombre','class'=>'form-control','placeholder'=>'Ingrese direccion'])!!}
               </div>
               <div class="form-group">
-                <label class="form-control-label" for="telefono"><strong>Descripcion:</strong></label>
+                <label class="form-control-label" for="telefono"><strong>Descripción:</strong></label>
                 {!!form::text('descripcion',null,['id'=>'descripcion','class'=>'form-control','placeholder'=>'teléfono'])!!}
               </div>
               <div class="pull-right">

@@ -19,7 +19,7 @@
               <h2 class="h1 display display">Registrar Tramite</h2>
             </div>
             <div class="card-block">
-              <p>Tramite documentario</p>
+              <p>Registrar datos de trámite</p>
               {!! Form::open(['action'=>'Admininfo\infoenosa\TramitesController@store','method'=>'POST'])!!}
               @include('serviciospiura.mensajes.mensajes')
               <div class="form-group">
@@ -28,12 +28,12 @@
             </div>
             </br>
             <div class="form-group">
-                <label class="form-control-label col-md-4" for="name"><strong>Nombre:</strong></label>
+                <label class="form-control-label col-md-4" for="name"><strong>Nombre de trámite:</strong></label>
                 {!!form::text('nombre', null,['id'=>'nombre','class'=>'form-control offset  offset col-sm-12 col-md-6 col-lg-5','placeholder'=>'reclamos'])!!}
             </div>
             <br>
             <div class="form-group">
-                <label class="form-control-label col-md-4" for="name"><strong>Descripcion:</strong></label>
+                <label class="form-control-label col-md-4" for="name"><strong>Descripción:</strong></label>
                 {!!form::textarea('descripcion', null,['id'=>'descripcion','class'=>'form-control offset  offset col-sm-12 col-md-6 col-lg-5','placeholder'=>'Descripcion'])!!}
             </div>
             <br>

@@ -4,7 +4,7 @@
 <div class="breadcrumb-holder">
     <div class="container-fluid">
       <ul class="breadcrumb">
-        <li class="breadcrumb-item"><a href="{{url('/serviciospiura/usuarioempresa')}}">Entidad</a></li>
+        <li class="breadcrumb-item"><a href="{{url('/serviciospiura/entidadepsgrau/listar')}}">Entidad</a></li>
         <li class="breadcrumb-item active">Nuevo</li>
       </ul>
     </div>
@@ -17,10 +17,10 @@
           <br/>
           <div class="card miBorder">
             <div class="card-header d-flex align-items-center">
-              <h2 class="h1 display display"><strong style="color:#f00">Eliminar Entidad empresa:</strong></h2>
+              <h2 class="h1 display display"><strong style="color:#f00">Eliminar reclamo:</strong></h2>
             </div>
             <div class="card-block">
-              <p>¿Desea eliminar datos de empresa?.</p>
+              <p>¿Desea eliminar datos de Reclamo?.</p>
               {!!Form::open(['action'=>['Admininfo\infoepsgrau\ReclamosController@destroy',$empresa->id],'method'=>'DELETE'])!!}
              
               <div class="form-group">

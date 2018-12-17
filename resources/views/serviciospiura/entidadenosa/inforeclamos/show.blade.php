@@ -17,10 +17,10 @@
           <br/>
           <div class="card miBorder">
             <div class="card-header d-flex align-items-center">
-              <h2 class="h1 display display"><strong style="color:#f00">Eliminar Entidad empresa:</strong></h2>
+              <h2 class="h1 display display"><strong style="color:#f00">Eliminar reclamo:</strong></h2>
             </div>
             <div class="card-block">
-              <p>¿Desea eliminar datos de empresa?.</p>
+              <p>¿Desea eliminar datos de reclamo?.</p>
               {!!Form::open(['action'=>['Admininfo\infoenosa\ReclamosController@destroy',$empresa->id],'method'=>'DELETE'])!!}
              
               <div class="form-group">
@@ -32,7 +32,7 @@
                 {!!$empresa->nombre!!}
               </div>
               <div class="form-group">
-                <strong>{!!form::label('Telefono:')!!}</strong>
+                <strong>{!!form::label('Descripción:')!!}</strong>
                 {!!$empresa->descripcion!!}
               </div>
               <!--<div class="form-group">

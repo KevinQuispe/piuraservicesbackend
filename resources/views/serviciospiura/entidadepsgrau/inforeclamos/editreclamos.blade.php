@@ -4,7 +4,7 @@
 <div class="breadcrumb-holder">
     <div class="container-fluid">
       <ul class="breadcrumb">
-        <li class="breadcrumb-item"><a href="{{url('/serviciospiura/entidadepsgrau/listar')}}">Usuarios</a></li>
+        <li class="breadcrumb-item"><a href="{{url('/serviciospiura/entidadepsgrau/listar')}}">Entidad</a></li>
         <li class="breadcrumb-item active">Nuevo</li>
       </ul>
     </div>
@@ -16,7 +16,7 @@
         <div class="offset-lg-2 col-lg-7">
           <div class="card miBorder">
             <div class="card-header d-flex align-items-center">
-              <h2 class="h1 display display">Editar datos de Entidad:</h2>
+              <h2 class="h1 display display">Editar datos de reclamo:</h2>
             </div>
             <div class="card-block">
               {!!Form::model($reclamos, ['action'=>['Admininfo\infoepsgrau\ReclamosController@update',$reclamos->id],'method'=>'PUT'])!!}
@@ -29,7 +29,7 @@
                 {!!form::text('nombre', null,['id'=>'nombre','class'=>'form-control','placeholder'=>'Nombre'])!!}
             </div>
               <div class="form-group">
-                <label class="form-control-label" for="telefono"><strong>Descripcion:</strong></label>
+                <label class="form-control-label" for="telefono"><strong>Descripción:</strong></label>
                 {!!form::text('descripcion',null,['id'=>'telefono','class'=>'form-control','placeholder'=>'teléfono'])!!}
               </div>
               <div class="pull-right">
