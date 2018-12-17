@@ -18,7 +18,7 @@ class UsuarioEmpresaController extends Controller
     {
         $usuarios = User::select('users.id','name','email','nombre')
         ->join('rolempresa','rolempresa.id','=','users.rol_id')->get();
-        return view ('serviciospiura/usuarioempresa/usuarioempresa')->with('usuario', $usuarios);
+        return view ('serviciospiura.usuarioempresa.usuarioempresa')->with('usuario', $usuarios);
     }
 
     /**
@@ -27,7 +27,8 @@ class UsuarioEmpresaController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function create()
-    {
+    {   
+        // echo("hola");
         $roles = RolEmpresa::pluck('nombre','id')->prepend('Seleccione el rol empresa...');
         return view ('serviciospiura/usuarioempresa/create')->with('roles', $roles);
     }
@@ -46,7 +47,6 @@ class UsuarioEmpresaController extends Controller
             'email' => 'required|string|email|max:255|unique:users',
             'password' => 'required|string|min:6|confirmed',
         ]);
-        
         User::create([
             'rol_id' => $request->rol_id,
             'name' =>  $request->name,

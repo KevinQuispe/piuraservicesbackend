@@ -91,7 +91,7 @@
           <!-- Sidebar Navidation Menus--><span class="heading">Contenido</span>
           <ul class="list-unstyled">
                     <li class="active"><a href="{{ url('/home') }}"><i class="icon-home"></i>Home</a></li>
-                      <li><a href="#admin-info" aria-expanded="false" data-toggle="collapse">
+                    <li><a href="#admin-info" aria-expanded="false" data-toggle="collapse">
                       <i class="icon-grid"></i>Admin Información</a>
                       <ul id="admin-info" class="collapse list-unstyled ">
                         @if (Auth::user()->rol_id == 1)
@@ -122,23 +122,61 @@
                     </li>
                     @endif
           </ul>
-
           <span class="heading">Web Scraping</span>
           <ul class="list-unstyled">
+            <!--Todo para admin-->
             @if (Auth::user()->rol_id == 1)
-              <li> <a href="{{url('serviciospiura/entidadepsgrau/scraping')}}"> <i class="icon-screen"></i>Web Scraping EPS Grau</a></li>
-              <li> <a href="{{url('serviciospiura/entidadenosa/scraping')}}"> <i class="icon-screen"></i>Web Scraping Enosa</a></li>
-              <li> <a href="{{url('serviciospiura/empresamovistar/scraping')}}"> <i class="icon-screen"></i>Web Scraping Movistar</a></li>
+            <li><a href="#admin-webScarping1" aria-expanded="false" data-toggle="collapse">
+                      <i class="icon-screen"></i>Web Scraping Eps Grau</a>
+                <ul id="admin-webScarping1" class="collapse list-unstyled ">
+                  <li>
+                    <a href="{{ url('serviciospiura/entidadepsgrau/scraping') }}">Información trámites</a>
+                  </li>
+              </ul>
+            </li>
+            <li><a href="#admin-webScarping2" aria-expanded="false" data-toggle="collapse">
+                      <i class="icon-screen"></i>Web Scraping Enosa</a>
+                <ul id="admin-webScarping2" class="collapse list-unstyled ">
+                  <li>
+                    <a href="{{ url('serviciospiura/entidadepsgrau/scraping') }}">Información trámites</a>
+                  </li>
+              </ul>
+            </li>
+            <li><a href="#admin-webScarping3" aria-expanded="false" data-toggle="collapse">
+                      <i class="icon-screen"></i>Web Scraping movistar</a>
+                <ul id="admin-webScarping3" class="collapse list-unstyled ">
+                  <li>                    
+                    <a href="{{ url('serviciospiura/entidadepsgrau/scraping') }}">Información trámites</a>
+                  </li>
+              </ul>
+            </li>
             @elseif (Auth::user()->rol_id == 2)
-              <li> <a href="#"> <i class="icon-screen"></i>Web Scraping EPS Grau</a></li>
+            <li><a href="#admin-webScarping1" aria-expanded="false" data-toggle="collapse">
+                      <i class="icon-screen"></i>Web Scraping Eps</a>
+                <ul id="admin-webScarping1" class="collapse list-unstyled ">
+                  <li>
+                    <a href="{{ url('serviciospiura/entidadepsgrau/scraping') }}">Información trámites</a>
+                  </li>
+              </ul>
+            </li>
             @elseif (Auth::user()->rol_id == 3)
-              <li> <a href="#"> <i class="icon-screen"></i>Web Scraping Enosa</a></li>
-            @elseif(Auth::user()->rol_id==4)
-              <li> <a href="#"> <i class="icon-screen"></i>Web Scraping Movistar</a></li>
-            @elseif(Auth::user()->rol_id==5)
-              <li> <a href="#"> <i class="icon-screen"></i>Web Scraping Claro</a></li>
-            @elseif(Auth::user()->rol_id==6)
-              <li><a href="#"> <i class="icon-screen"></i>Web Scraping Entel</a></li>
+            <li><a href="#admin-webScarping2" aria-expanded="false" data-toggle="collapse">
+                      <i class="icon-screen"></i>Web Scraping Enosa</a>
+                <ul id="admin-webScarping2" class="collapse list-unstyled ">
+                  <li>
+                    <a href="{{ url('serviciospiura/entidadepsgrau/scraping') }}">Información trámites</a>
+                  </li>
+              </ul>
+            </li>
+            @elseif (Auth::user()->rol_id == 4)
+            <li><a href="#admin-webScarping3" aria-expanded="false" data-toggle="collapse">
+                      <i class="icon-screen"></i>Web Scraping Movistar</a>
+                <ul id="admin-webScarping3" class="collapse list-unstyled ">
+                  <li>                    
+                    <a href="{{ url('serviciospiura/entidadepsgrau/scraping') }}">Información trámites</a>
+                  </li>
+              </ul>
+            </li>
             @endif
           </ul>
         </nav>
