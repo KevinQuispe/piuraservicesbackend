@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 12-12-2018 a las 18:46:24
+-- Tiempo de generación: 17-12-2018 a las 17:00:05
 -- Versión del servidor: 10.1.21-MariaDB
 -- Versión de PHP: 5.6.30
 
@@ -17,7 +17,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `db_piuraservices`
+-- Base de datos: `dbpiuraservices`
 --
 
 -- --------------------------------------------------------
@@ -31,9 +31,9 @@ CREATE TABLE `contactos` (
   `entidadempresa_id` int(10) UNSIGNED NOT NULL,
   `nombreempresa` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
   `direccion` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `horario` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `telefono` int(11) NOT NULL,
-  `tipoatencion` int(11) NOT NULL,
+  `horario` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `telefono` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `tipoatencion` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   `deleted_at` timestamp NULL DEFAULT NULL
@@ -44,10 +44,11 @@ CREATE TABLE `contactos` (
 --
 
 INSERT INTO `contactos` (`id`, `entidadempresa_id`, `nombreempresa`, `direccion`, `horario`, `telefono`, `tipoatencion`, `created_at`, `updated_at`, `deleted_at`) VALUES
-(1, 1, 'eps', 'alsda', 'aslda', 93939, 929292, NULL, NULL, NULL),
-(2, 2, 'enosa', 'alsda', 'aslda', 93939, 929292, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
-(3, 2, 'movistar', 'alsda', 'aslda', 93939, 929292, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
-(4, 4, 'claro', 'alsda', 'aslda', 93939, 929292, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
+(1, 1, 'eps', 'aslda', 'alsda', '93939', 'todo', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(2, 2, 'enosa', 'aslda', 'alsda', '93939', 'todo', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(3, 3, 'movistar', 'aslda', 'alsda', '93939', 'todo', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(4, 4, 'claro', 'aslda', 'alsda', '93939', 'todo', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(5, 5, 'entel', 'aslda', 'alsda', '93939', 'todo', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -73,11 +74,12 @@ CREATE TABLE `entidadempresa` (
 --
 
 INSERT INTO `entidadempresa` (`id`, `nombre`, `direccion`, `telefono`, `correo`, `horario`, `webentidad`, `created_at`, `updated_at`, `deleted_at`) VALUES
-(1, 'eps', 'lima', '393939', 'askdaksd', 'asjdajsd', 'dasdjaskd', NULL, NULL, NULL),
+(1, 'Eps Grau SA', 'piura', '939393', 'eps@gmail.com', '4:3pm', 'epsgrau.com', '0000-00-00 00:00:00', '2018-12-17 18:41:18', '0000-00-00 00:00:00'),
 (2, 'enosa', 'piura', 'ieei', 'ldads', 'alsdas', 'dasdjaskd', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
-(3, 'movistar', 'piura 3', 'lsdkas', 'askdaksas', 'asjdajsd', 'dasdjaskd', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
-(4, 'claro', 'piura933', 'asñdkasa', 'lasdalsd', 'asdmasd', 'dasdjaskd', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
-(5, 'entel', 'piura', 'askdla', 'laskd', 'asjdajsd', 'dasdjaskd', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
+(3, 'movistar', 'piura ', 'lsdkas', 'askdaksas', 'asjdajsd', 'dasdjaskd', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(4, 'claro', 'piura', 'asñdkasa', 'lasdalsd', 'asdmasd', 'dasdjaskd', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(5, 'entel', 'piura', 'askdla', 'laskd', 'asjdajsd', 'dasdjaskd', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(6, 'asldk', 'ldksld', 'aksdlka', 'sdflksdl', 'lsdkalsd', 'sldkasld', '2018-12-17 19:27:00', '2018-12-17 19:27:00', NULL);
 
 -- --------------------------------------------------------
 
@@ -95,6 +97,17 @@ CREATE TABLE `inforeclamos` (
   `deleted_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Volcado de datos para la tabla `inforeclamos`
+--
+
+INSERT INTO `inforeclamos` (`id`, `entidadempresa_id`, `nombre`, `descripcion`, `created_at`, `updated_at`, `deleted_at`) VALUES
+(1, 1, 'reclamo 1', 'desc reclamo 1', '2018-12-15 03:37:44', '2018-12-15 03:37:44', '0000-00-00 00:00:00'),
+(2, 2, 'reclamo 2', 'des reclamo 2', '2018-12-15 03:37:44', '2018-12-15 03:37:44', '0000-00-00 00:00:00'),
+(3, 3, 'reclamo 3', 'des reclamo 3', '2018-12-15 03:37:44', '2018-12-15 03:37:44', '0000-00-00 00:00:00'),
+(4, 4, 'reclamo 4', 'des reclamo 4', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(5, 5, 'reclamo 5', 'des reclamo 5', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
+
 -- --------------------------------------------------------
 
 --
@@ -111,6 +124,17 @@ CREATE TABLE `infotramites` (
   `deleted_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Volcado de datos para la tabla `infotramites`
+--
+
+INSERT INTO `infotramites` (`id`, `entidadempresa_id`, `nombre`, `descripcion`, `created_at`, `updated_at`, `deleted_at`) VALUES
+(1, 1, 'tramite 1', 'desc tramite 1', '2018-12-15 03:36:27', '2018-12-15 03:36:27', '0000-00-00 00:00:00'),
+(2, 2, 'tramite 2', 'desc tramite 2', '2018-12-15 03:36:27', '2018-12-15 03:36:27', '0000-00-00 00:00:00'),
+(3, 3, 'tramite 3', 'desc tramite 3', '2018-12-15 03:36:27', '2018-12-15 03:36:27', '0000-00-00 00:00:00'),
+(4, 4, 'tramite 4', 'desc tramite 4', '2018-12-15 03:36:27', '2018-12-15 03:36:27', '0000-00-00 00:00:00'),
+(5, 5, 'tramite 5', 'desc tramite 5', '2018-12-15 03:36:27', '2018-12-15 03:36:27', '0000-00-00 00:00:00');
+
 -- --------------------------------------------------------
 
 --
@@ -122,19 +146,6 @@ CREATE TABLE `migrations` (
   `migration` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
   `batch` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
---
--- Volcado de datos para la tabla `migrations`
---
-
-INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
-(182, '2014_10_10_000000_create_rolempresa_table', 1),
-(183, '2014_10_12_000000_create_users_table', 1),
-(184, '2014_10_12_100000_create_password_resets_table', 1),
-(185, '2018_09_06_181956_create_entidadempresa_table', 1),
-(186, '2018_09_06_182020_create_inforeclamos_table', 1),
-(187, '2018_09_06_182134_create_infotramites_table', 1),
-(188, '2018_09_06_182209_create_contactos_table', 1);
 
 -- --------------------------------------------------------
 
@@ -196,7 +207,9 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `rol_id`, `name`, `email`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 1, 'Kevin Quispe', 'kquispe07@gmail.com', '$2y$10$P.CPbIBkq7/badIPmwvvdup1bVkJ/2byezfYyK36k8RgCzGpBVnqu', NULL, NULL, NULL);
+(1, 1, 'Kevin Quispe', 'kquispe07@gmail.com', '$2y$10$bXybc/3ilDhdWrPV/Tfqh.H9Reuk.l1TBlaAawDmlWYnY/pWBJvRu', 'zDkD0sZFYHqo4mWZtBOeGsk3sReHEJhRw7gxtQyMlMgR3h7EMGWKzhYF0EBF', NULL, NULL),
+(2, 4, 'Javier', 'javierromualdo@hotmail.com', '$2y$10$f5pwFVq70Ost/oyvVbgGY.I90qQPLdS9W7zPT3KqslI/5.kLoTH7C', 'Rh4XvSZHsmN4bn6K9mLyNbM5MPAQwDy9Oa2Owsmpc7muiN0bK9blwzQk61yP', '2018-12-17 03:44:55', '2018-12-17 03:45:29'),
+(3, 6, 'pedro', 'pedroquispe@gmail.com', '$2y$10$r75mnBoLqPiZUWRtbZAKN.85wl7xvPXGcsofaa/y/MiUV4jzje4D.', 'GasdGdJ30NzazWdxkyFZlabVs5pzKAolDHPA5qSiRQ0DG6LXoBaQZS7Qcg1b', '2018-12-17 04:03:09', '2018-12-17 04:03:09');
 
 --
 -- Índices para tablas volcadas
@@ -215,8 +228,7 @@ ALTER TABLE `contactos`
 ALTER TABLE `entidadempresa`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `entidadempresa_nombre_unique` (`nombre`),
-  ADD UNIQUE KEY `entidadempresa_telefono_unique` (`telefono`),
-  ADD UNIQUE KEY `entidadempresa_correo_unique` (`correo`);
+  ADD UNIQUE KEY `entidadempresa_telefono_unique` (`telefono`);
 
 --
 -- Indices de la tabla `inforeclamos`
@@ -266,27 +278,27 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT de la tabla `contactos`
 --
 ALTER TABLE `contactos`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 --
 -- AUTO_INCREMENT de la tabla `entidadempresa`
 --
 ALTER TABLE `entidadempresa`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 --
 -- AUTO_INCREMENT de la tabla `inforeclamos`
 --
 ALTER TABLE `inforeclamos`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 --
 -- AUTO_INCREMENT de la tabla `infotramites`
 --
 ALTER TABLE `infotramites`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 --
 -- AUTO_INCREMENT de la tabla `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=189;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
 --
 -- AUTO_INCREMENT de la tabla `rolempresa`
 --
@@ -296,7 +308,7 @@ ALTER TABLE `rolempresa`
 -- AUTO_INCREMENT de la tabla `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
 -- Restricciones para tablas volcadas
 --
