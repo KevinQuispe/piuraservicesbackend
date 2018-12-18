@@ -64,7 +64,7 @@ class ClaroController extends Controller
       */
      public function show($id)
      {
-        $empresa = \DB::table('entidadempresa')->where('id','3')->first();
+        $empresa = \DB::table('entidadempresa')->where('id','4')->first();
         return view('serviciospiura.empresaclaro.inforeferencial.show',compact('empresa'));
      }
  
@@ -128,7 +128,7 @@ class ClaroController extends Controller
        public function getinforeclamos()
        {
            # code...
-           $reclamos = \DB::table('inforeclamos')->where('entidadempresa_id','3')->get();
+           $reclamos = \DB::table('inforeclamos')->where('entidadempresa_id','4')->get();
            return view('serviciospiura.empresaclaro.inforeclamos.listainforeclamos',compact('reclamos'));
        }
         /**

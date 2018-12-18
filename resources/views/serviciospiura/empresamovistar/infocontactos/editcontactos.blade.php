@@ -4,8 +4,8 @@
 <div class="breadcrumb-holder">
     <div class="container-fluid">
       <ul class="breadcrumb">
-        <li class="breadcrumb-item"><a href="{{url('/serviciospiura/empresamovistar/listar')}}">Usuarios</a></li>
-        <li class="breadcrumb-item active">Nuevo</li>
+        <li class="breadcrumb-item"><a href="{{url('/serviciospiura/empresamovistar/listar')}}">Entidad</a></li>
+        <li class="breadcrumb-item active">Editar</li>
       </ul>
     </div>
   </div>

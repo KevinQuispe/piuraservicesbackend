@@ -42,10 +42,8 @@ class ContactosController extends Controller
         Contactos::create($request->all());
         Session::flash('save','Se ha creado correctamente');
         return redirect()->action('Admininfo\infoclaro\ContactosController@index');
-      
+   
     }
-
-
     public function show($id)
     {
         $empresaid= EntidadEmpresa::where('id', '4')->pluck('nombre','id'); 
