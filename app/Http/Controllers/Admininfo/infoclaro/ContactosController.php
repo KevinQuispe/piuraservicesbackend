@@ -15,12 +15,11 @@ class ContactosController extends Controller
 {
     public function index()
     {
-        $reclamos = DB::table('contactos')->where('entidadempresa_id','4')->get();        
+        $reclamos = \DB::table('contactos')->where('entidadempresa_id','4')->get();        
         return view('serviciospiura.empresaclaro.infocontactos.listainfocontactos',compact('reclamos'));
     }
 
- 
-    public function create()
+     public function create()
     {
         $empresaid= EntidadEmpresa::where('id', '4')->pluck('nombre','id');
         return view('serviciospiura.empresaclaro.infocontactos.create',compact('empresaid'));

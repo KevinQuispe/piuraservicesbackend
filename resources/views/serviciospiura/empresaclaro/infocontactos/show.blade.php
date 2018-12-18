@@ -23,7 +23,6 @@
               <p>¿Desea eliminar datos de contacto?.</p>
               {!!Form::open(['action'=>['Admininfo\infoclaro\ContactosController@destroy',$empresa->id],'method'=>'DELETE'])!!}
              
-             
               <div class="form-group">
               <strong>{!!form::label('idempresa:')!!}</strong>
               {!!form::select('entidadempresa_id', $empresaid,null,['class'=>'form-control'])!!}

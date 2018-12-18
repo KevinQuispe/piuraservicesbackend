@@ -14,7 +14,8 @@ class ScrapingMovistarController extends Controller
      */
     public function index()
     {
-        return view('serviciospiura.empresamovistar.inforeferencial.webscraping');
+       // echo ("hola");
+        return view('serviciospiura.scrapingweb.telefonia.webscraping');
     }
 
     /**

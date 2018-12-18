@@ -40,6 +40,10 @@
               <label class="form-control-label" for="name"><strong>Horario de atención:</strong></label>
               {!!form::text('horario',null,['id'=>'horario','class'=>'form-control','placeholder'=>'Ingrese horario de atención'])!!}
             </div>
+            <div class="form-group">
+              <label class="form-control-label" for="name"><strong>Tipo de atención:</strong></label>
+              {!!form::text('tipoatencion',null,['id'=>'tipoatencion','class'=>'form-control','placeholder'=>'Ingrese tipo de atención'])!!}
+            </div>
               <div class="pull-right">
               <div class="form-group">
               {!!form::submit('Guardar',['name'=>'grabar','id'=>'grabar','content'=>'<span class="glyphicon glyphicon-floppy-disk">Guardar</span>',

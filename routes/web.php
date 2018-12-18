@@ -19,7 +19,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-//rutas crud entidad empresa epsgrau con resource
+//rutas crud entidad empresa epsgrau
 Route::resource('serviciospiura/entidadepsgrau/listar', 'Admininfo\infoepsgrau\EpsGrauController');
 Route::resource('serviciospiura/entidadepsgrau/reclamos', 'Admininfo\infoepsgrau\ReclamosController');
 Route::resource('serviciospiura/entidadepsgrau/tramites', 'Admininfo\infoepsgrau\TramitesController');
@@ -48,15 +48,15 @@ Route::resource('serviciospiura/empresaentel/listar', 'Admininfo\infoentel\Entel
 Route::resource('serviciospiura/empresaentel/reclamos', 'Admininfo\infoentel\ReclamosController');
 Route::resource('serviciospiura/empresaentel/tramites', 'Admininfo\infoentel\TramitesController');
 Route::resource('serviciospiura/empresaentel/contactos', 'Admininfo\infoentel\ContactosController');
-//rutas para crear usuarios
+//rutas crud administrar usuarios
 Route::resource('serviciospiura/usuarioempresa', 'Consultas\UsuarioEmpresaController');
 
-//rutas para listar informacion epsgrau con parametros get
+//rutas para listar informacion epsgrau con parametros
 Route::get('serviciospiura/entidadepsgrau/getinforeclamos', 'Admininfo\infoepsgrau\EpsGrauController@getinforeclamos');
 Route::get('serviciospiura/entidadepsgrau/getinforeclamos/{id}', 'Admininfo\infoepsgrau\EpsGrauController@getinforeclamos');
 Route::get('serviciospiura/entidadepsgrau/getinfotramites/{id}', 'Admininfo\infoepsgrau\EpsGrauController@getinfotramites');
 
-//rutas para listar informacion enosa
+//rutas para listar informacion enosa con parametros
 Route::get('serviciospiura/entidadenosa/getinforeclamos', 'Admininfo\infoenosa\EnosaController@getinforeclamos');
 Route::get('serviciospiura/entidadenosa/getinforeclamos/{id}', 'Admininfo\infoenosa\EnosaController@getinforeclamos');
 Route::get('serviciospiura/entidadenosa/getinfotramites/{id}', 'Admininfo\infoenosa\EnosaController@getinfotramites');
@@ -73,8 +73,12 @@ Route::get('serviciospiura/empresaentel/getinforeclamos', 'Admininfo\infoentel\E
 Route::get('serviciospiura/empresaentel/getinforeclamos/{id}', 'Admininfo\infoentel\EntelController@getinforeclamos');
 Route::get('serviciospiura/empresaentel/getinfotramites/{id}', 'Admininfo\infoentel\EntelController@getinfotramites');
 
-//rutas para listar el scrapeo web
-Route::resource('scraping/enosa', 'Scraping\ScrapingEnosaController');
-// nuevos cambios
-Route::get('scraping/epsgrau', 'Scraping\ScrapingEpsgrauController@comparescraping');
+//rutas para listar informacion de tramites web scraping
+Route::resource('serviciospiura/scraping/enosa', 'Scraping\ScrapingEnosaController');
+Route::resource('serviciospiura/scraping/epsgrau', 'Scraping\ScrapingEpsGrauController');
+Route::resource('serviciospiura/scraping/movistar', 'Scraping\ScrapingMovistarController');
+//Rutas para hacer la comparacion de informacion con web scraping
+Route::get('serviciospiura/scraping/compareinfoepsgrau', 'Scraping\ScrapingEpsgrauController@comparescraping');
+Route::get('serviciospiura/scraping/compareinfoenosa', 'Scraping\ScrapingEnosaController@comparescraping');
+Route::get('serviciospiura/scraping/compareinfomovistar', 'Scraping\ScrapingMovistarController@comparescraping');
 

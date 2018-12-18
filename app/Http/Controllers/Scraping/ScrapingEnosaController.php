@@ -14,7 +14,7 @@ class ScrapingEnosaController extends Controller
      */
     public function index()
     {
-        return view('serviciospiura.entidadenosa.inforeferencial.webscraping');
+        return view('serviciospiura.scrapingweb.enosa.webscraping');
     }
 
     /**

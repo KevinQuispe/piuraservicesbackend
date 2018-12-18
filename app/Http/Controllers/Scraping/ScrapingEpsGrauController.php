@@ -14,7 +14,7 @@ class ScrapingEpsGrauController extends Controller
      */
     public function index()
     {
-        return view('serviciospiura.entidadepsgrau.inforeferencial.webscraping');
+        return view('serviciospiura.scrapingweb.epsgrau.webscraping');
     }
 
     /**
