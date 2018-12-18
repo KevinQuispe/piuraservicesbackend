@@ -23,26 +23,35 @@
               {!! Form::open(['action'=>'Admininfo\infoentel\ContactosController@store','method'=>'POST'])!!}
               @include('serviciospiura.mensajes.mensajes')
               <div class="form-group">
-                <label class="form-control-label col-md-4"><strong>Entidad</strong></label>
-                {!!form::select('entidadempresa_id', $empresaid,null,['class'=>'form-control'])!!}
-              </div>
-              </br>
-              <div class="form-group">
-                <label class="form-control-label col-md-4" for="name"><strong>Empresa:</strong></label>
-                {!!form::text('nombreempresa', null,['id'=>'nombreempresa','class'=>'form-control offset  offset col-sm-12 col-md-6 col-lg-5','placeholder'=>'empresa'])!!}
+              <label class="form-control-label col-md-4"><strong>idEntidad</strong></label>
+              {!!form::select('entidadempresa_id', $empresaid,null,['class'=>'form-control'])!!}
             </div>
             </br>
             <div class="form-group">
-                <label class="form-control-label col-md-4" for="name"><strong>Descripcion:</strong></label>
-                {!!form::text('descripcion', null,['id'=>'descripcion','class'=>'form-control offset  offset col-sm-12 col-md-6 col-lg-5','placeholder'=>'Agregue aqui una pequeña descripcion'])!!}
-            </div>
-            </br>
-            <div class="form-group">
-                <label class="form-control-label col-md-4" for="name"><strong>Telefono:</strong></label>
-                {!!form::number('numero', 'null',['id'=>'numero','min'=>0,'class'=>'form-control offset  offset col-sm-12 col-md-6 col-lg-5','placeholder'=>'9999999999'])!!}
-            </div>
-            <br>
-              
+              <label class="form-control-label col-md-4" for="name"><strong>Empresa:</strong></label>
+              {!!form::text('nombreempresa',null, ['id'=>'nombreempresa','class'=>'form-control offset  offset col-sm-12 col-md-6 col-lg-5','placeholder'=>'Ingrese nombre de la empresa'])!!}
+          </div>
+          </br>
+          <div class="form-group">
+              <label class="form-control-label col-md-4" for="name"><strong>Dirección:</strong></label>
+              {!!form::text('direccion',null,['id'=>'direccion','class'=>'form-control offset  offset col-sm-12 col-md-6 col-lg-5','placeholder'=>'Ingrese dirección'])!!}
+          </div>
+          </br>
+          <div class="form-group">
+              <label class="form-control-label col-md-4" for="name"><strong>Telefono:</strong></label>
+              {!!form::text('telefono',null,['id'=>'telefono','class'=>'form-control offset  offset col-sm-12 col-md-6 col-lg-5','placeholder'=>'Ingrese numero telefonico'])!!}
+          </div>
+          <br>
+          <div class="form-group">
+              <label class="form-control-label col-md-4" for="name"><strong>Horario:</strong></label>
+              {!!form::text('horario',null,['id'=>'horario','class'=>'form-control offset  offset col-sm-12 col-md-6 col-lg-5','placeholder'=>'Ingrese horario de atención'])!!}
+          </div>
+          <br>
+          <div class="form-group">
+              <label class="form-control-label col-md-4" for="name"><strong>Tipo de atención:</strong></label>
+              {!!form::text('tipoatencion', null,['id'=>'tipoatencion','class'=>'form-control offset  offset col-sm-12 col-md-6 col-lg-5','placeholder'=>'Ingrese tipo de atención'])!!}
+          </div>
+          <br> 
               <div class="pull-right">
               <div class="form-group">
 

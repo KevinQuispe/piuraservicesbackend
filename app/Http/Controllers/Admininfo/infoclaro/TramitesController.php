@@ -26,7 +26,7 @@ class TramitesController extends Controller
      */
     public function create()
     {
-        $empresaid= EntidadEmpresa::where('id', '5')->pluck('nombre','id');
+        $empresaid= EntidadEmpresa::where('id', '4')->pluck('nombre','id');
         return view('serviciospiura.empresaclaro.infotramites.create',compact('empresaid'));
     }
 
@@ -58,7 +58,7 @@ class TramitesController extends Controller
      */
     public function show($id)
     {
-        $empresaid= EntidadEmpresa::where('id', '5')->pluck('nombre','id');
+        $empresaid= EntidadEmpresa::where('id', '4')->pluck('nombre','id');
         $tramites = InfoTramites::FindOrFail($id);
          return view('serviciospiura.empresaclaro.infotramites.show',compact('tramites','empresaid'));
     }
@@ -71,7 +71,7 @@ class TramitesController extends Controller
      */
     public function edit($id)
     {
-        $empresaid= EntidadEmpresa::where('id', '5')->pluck('nombre','id');
+        $empresaid= EntidadEmpresa::where('id', '4')->pluck('nombre','id');
         $tramites = InfoTramites::FindOrFail($id);
         return View('serviciospiura.empresaclaro.infotramites.edittramites',compact('tramites','empresaid'));
     }

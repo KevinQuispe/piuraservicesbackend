@@ -4,7 +4,7 @@
 <div class="breadcrumb-holder">
     <div class="container-fluid">
       <ul class="breadcrumb">
-        <li class="breadcrumb-item"><a href="{{url('/serviciospiura/empresaentel/listar')}}">Entidad</a></li>
+        <li class="breadcrumb-item"><a href="{{url('/serviciospiura/empresclaro/listar')}}">Entidad</a></li>
         <li class="breadcrumb-item active">Nuevo</li>
       </ul>
     </div>
@@ -20,7 +20,7 @@
               <h2 class="h1 display display"><strong style="color:#f00">Eliminar Entidad empresa:</strong></h2>
             </div>
             <div class="card-block">
-              <p>¿Desea eliminar datos de empresa?.</p>
+              <p>¿Desea eliminar datos del reclamo?.</p>
               {!!Form::open(['action'=>['Admininfo\infoclaro\ReclamosController@destroy',$empresa->id],'method'=>'DELETE'])!!}
              
               <div class="form-group">
@@ -28,7 +28,7 @@
                 {!!form::select('entidadempresa_id', $empresaid,null,['class'=>'form-control'])!!}
               </div>
               <div class="form-group">
-                <strong>{!!form::label('Nombre:')!!}</strong>
+                <strong>{!!form::label('Nombre reclamo:')!!}</strong>
                 {!!$empresa->nombre!!}
               </div>
               <div class="form-group">

@@ -29,13 +29,13 @@
         <table class="table table-striped table-hover table-bordered" id="myTable">
 
           <thead class="thead-inverse">
-            <tr>
+          <tr class="bg-primary">
               <th class="text-center">#</th>
               <th>Nombre</th>
               <th>Dirección</th>
               <th>Teléfono</th>
               <th>Correo</th>
-              <th>Horario de atención</th>
+              <th>Horario</th>
               <th>Webentidad</th>
               <th>Acciones</th>
             </tr>

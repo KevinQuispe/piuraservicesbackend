@@ -24,17 +24,17 @@
               @include('serviciospiura.mensajes.mensajes')
               <div class="form-group">
                 <label class="form-control-label col-md-4" for="name"><strong>Nombre Entidad:</strong></label>
-                {!!form::text('nombre', null,['id'=>'nombre','class'=>'form-control offset  offset col-sm-12 col-md-6 col-lg-5','placeholder'=>'Ingrese Nombre empresa'])!!}
+                {!!form::text('nombre', null,['id'=>'nombre','class'=>'form-control offset  offset col-sm-12 col-md-6 col-lg-5','placeholder'=>'Ingrese nombre empresa'])!!}
             </div>
             </br>
             <div class="form-group">
                 <label class="form-control-label col-md-4" for="name"><strong>Telefono:</strong></label>
-                {!!form::text('telefono', null,['id'=>'telefono','class'=>'form-control offset  offset col-sm-12 col-md-6 col-lg-5','placeholder'=>'Ingrese Nombre empresa'])!!}
+                {!!form::text('telefono', null,['id'=>'telefono','class'=>'form-control offset  offset col-sm-12 col-md-6 col-lg-5','placeholder'=>'Ingrese teléfono empresa'])!!}
             </div>
             <br>
               <div class="form-group">
                 <label class="form-control-label col-md-4" for="email"><strong>Dirección:</strong></label>
-                {!!form::text('direccion', null,['id'=>'direccion','class'=>'form-control offset col-sm-12 col-md-6 col-lg-5','placeholder'=>'Ingrese Dirección'])!!}
+                {!!form::text('direccion', null,['id'=>'direccion','class'=>'form-control offset col-sm-12 col-md-6 col-lg-5','placeholder'=>'Ingrese dirección'])!!}
               </div>
               <br>
               <div class="form-group">
@@ -44,7 +44,7 @@
               <br>
               <div class="form-group">
                 <label class="form-control-label col-md-4" for="email"><strong>Horario:</strong></label>
-                {!!form::text('horario', null,['id'=>'horario','class'=>'form-control offset col-sm-12 col-md-6 col-lg-5','placeholder'=>'Ingrese Horario de atención'])!!}
+                {!!form::text('horario', null,['id'=>'horario','class'=>'form-control offset col-sm-12 col-md-6 col-lg-5','placeholder'=>'Ingrese horario de atención'])!!}
               </div>
               <br>
               <div class="form-group">

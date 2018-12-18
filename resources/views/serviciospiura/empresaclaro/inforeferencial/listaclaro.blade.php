@@ -29,13 +29,13 @@
         <table class="table table-striped table-hover table-bordered" id="myTable">
 
           <thead class="thead-inverse">
-            <tr>
+          <tr class="bg-primary">
               <th class="text-center">#</th>
               <th>Nombre</th>
               <th>Dirección</th>
               <th>Teléfono</th>
               <th>Correo</th>
-              <th>Horario de atención</th>
+              <th>Horario</th>
               <th>Webentidad</th>
               <th>Acciones</th>
             </tr>
@@ -53,7 +53,7 @@
                   <td class="text-center">
                     <a href="{{action('Admininfo\infoclaro\ClaroController@edit', $empresa->id)}}" class="btn btn-outline-primary btn-sm ion-edit" title="Editar">Editar</a>
                     <a href="{{action('Admininfo\infoclaro\ClaroController@show', $empresa->id)}}" class="btn btn-outline-danger btn-sm ion-android-delete" title="Eliminar">Eliminar</a>
-                    <a href="{{url('serviciospiura/empresaclaro/reclamos')}}" class="btn btn-outline-success btn-sm ion-android-search" title="Compare web scraping">Web Scraping</a>
+                    <!-- <a href="{{url('serviciospiura/empresaclaro/reclamos')}}" class="btn btn-outline-success btn-sm ion-android-search" title="Compare web scraping">Web Scraping</a> -->
                 
                   </td>
                 </tr>

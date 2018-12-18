@@ -16,7 +16,7 @@
         <div class="offset col-md">
           <div class="card miBorder">
             <div class="card-header d-flex align-items-center bg-primary">
-              <h2 class="h1 display display">Registrar Entidad Empresa</h2>
+              <h2 class="h1 display display">Registrar Información referencial</h2>
             </div>
             <div class="card-block">
               <p>Ingrese los datos de la Entidad Empresa</p>

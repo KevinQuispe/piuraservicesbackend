@@ -17,28 +17,37 @@
           <br/>
           <div class="card miBorder">
             <div class="card-header d-flex align-items-center">
-              <h2 class="h1 display display"><strong style="color:#f00">Eliminar Entidad empresa:</strong></h2>
+              <h2 class="h1 display display"><strong style="color:#f00">Eliminar trámite:</strong></h2>
             </div>
             <div class="card-block">
-              <p>¿Desea eliminar datos de empresa?.</p>
+              <p>¿Desea eliminar datos de trámite?.</p>
               {!!Form::open(['action'=>['Admininfo\infotelefonia\TramitesController@destroy',$tramites->id],'method'=>'DELETE'])!!}
-             
+              
+              
               <div class="form-group">
-                <strong>{!!form::label('idempresa:')!!}</strong>
-                {!!form::select('entidadempresa_id', $empresaid,null,['class'=>'form-control'])!!}
-              </div>
-              <div class="form-group">
-                <strong>{!!form::label('Nombre:')!!}</strong>
-                {!!$tramites->nombre!!}
-              </div>
-              <div class="form-group">
-                <strong>{!!form::label('Descripcion:')!!}</strong>
-                {!!$tramites->descripcion!!}
-              </div>
-                  <!--<div class="form-group">
-                <strong>{ !!form::label('Password:')!!}</strong>
-                { !!$usuario->password!!}
-              </div>-->
+              <strong>{!!form::label('idempresa:')!!}</strong>
+              {!!form::select('entidadempresa_id', $empresaid,null,['class'=>'form-control'])!!}
+            </div>
+            <div class="form-group">
+              <strong>{!!form::label('Nombre Empresa:')!!}</strong>
+              {!!$empresa->nombreempresa!!}
+            </div>
+            <div class="form-group">
+              <strong>{!!form::label('Dirección:')!!}</strong>
+              {!!$empresa->direccion!!}
+            </div>
+            <div class="form-group">
+              <strong>{!!form::label('Teléfono:')!!}</strong>
+              {!!$empresa->telefono!!}
+            </div>
+            <div class="form-group">
+              <strong>{!!form::label('Horario:')!!}</strong>
+              {!!$empresa->horario!!}
+            </div>
+            <div class="form-group">
+              <strong>{!!form::label('Tipo de atención:')!!}</strong>
+              {!!$empresa->tipoatencion!!}
+            </div>
               <div class="form-group">
                 <a href="{{url('/serviciospiura/empresamovistar/tramites')}}" class="btn btn-secondary">Cancelar</a>
                 {!!form::submit('Eliminar',['name'=>'grabar','id'=>'grabar','content'=>'<span class="glyphicon glyphicon-floppy-disk">Eliminar</span>','class'=>'btn

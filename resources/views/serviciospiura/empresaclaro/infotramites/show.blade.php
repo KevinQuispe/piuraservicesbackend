@@ -20,7 +20,7 @@
               <h2 class="h1 display display"><strong style="color:#f00">Eliminar Entidad empresa:</strong></h2>
             </div>
             <div class="card-block">
-              <p>¿Desea eliminar datos de empresa?.</p>
+              <p>¿Desea eliminar datos de trámite?.</p>
               {!!Form::open(['action'=>['Admininfo\infoclaro\TramitesController@destroy',$tramites->id],'method'=>'DELETE'])!!}
              
               <div class="form-group">

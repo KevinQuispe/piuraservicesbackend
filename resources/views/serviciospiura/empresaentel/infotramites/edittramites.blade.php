@@ -16,7 +16,7 @@
         <div class="offset-lg-2 col-lg-7">
           <div class="card miBorder">
             <div class="card-header d-flex align-items-center">
-              <h2 class="h1 display display">Editar datos de Entidad:</h2>
+              <h2 class="h1 display display">Editar datos de trámite:</h2>
             </div>
             <div class="card-block">
               {!!Form::model($tramites, ['action'=>['Admininfo\infoentel\TramitesController@update',$tramites->id],'method'=>'PUT'])!!}

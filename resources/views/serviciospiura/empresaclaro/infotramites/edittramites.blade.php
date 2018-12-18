@@ -4,7 +4,7 @@
 <div class="breadcrumb-holder">
     <div class="container-fluid">
       <ul class="breadcrumb">
-        <li class="breadcrumb-item"><a href="{{url('/serviciospiura/usuarioempresa')}}">Usuarios</a></li>
+        <li class="breadcrumb-item"><a href="{{url('/serviciospiura/empresaclaro/listar')}}">Entidad</a></li>
         <li class="breadcrumb-item active">Nuevo</li>
       </ul>
     </div>
@@ -16,7 +16,7 @@
         <div class="offset-lg-2 col-lg-7">
           <div class="card miBorder">
             <div class="card-header d-flex align-items-center">
-              <h2 class="h1 display display">Editar datos de Entidad:</h2>
+              <h2 class="h1 display display">Editar datos de trámite:</h2>
             </div>
             <div class="card-block">
               {!!Form::model($tramites, ['action'=>['Admininfo\infoclaro\TramitesController@update',$tramites->id],'method'=>'PUT'])!!}
@@ -26,11 +26,11 @@
               </div>
             <div class="form-group">
                 <label class="form-control-label" for="direccion"><strong>Nombre:</strong></label>
-                {!!form::text('nombre', null,['id'=>'nombre','class'=>'form-control','placeholder'=>'Nombre'])!!}
+                {!!form::text('nombre', null,['id'=>'nombre','class'=>'form-control','placeholder'=>'Nombre de trámite'])!!}
               </div>
               <div class="form-group">
                 <label class="form-control-label" for="telefono"><strong>Descripcion:</strong></label>
-                {!!form::text('descripcion',null,['id'=>'descripcion','class'=>'form-control','placeholder'=>'descripcion'])!!}
+                {!!form::text('descripcion',null,['id'=>'descripcion','class'=>'form-control','placeholder'=>'descripcion de trámite'])!!}
               </div>
               <div class="pull-right">
               <div class="form-group">
