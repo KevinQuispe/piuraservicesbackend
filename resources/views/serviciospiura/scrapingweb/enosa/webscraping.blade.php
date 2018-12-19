@@ -44,5 +44,12 @@
                 </tbody>
               </table>
               </div>
+
+              <section>
+    <h3>Web scraping de tramites</h3>
+    <h4>PHP DOM HTML PARSE</h4> 
+    <!--  -->
   </section>
+  </section>
+  
 @endsection

@@ -44,5 +44,13 @@
                 </tbody>
               </table>
               </div>
+
+    <section>
+      <h1>Scraping web sitio web Eps Grau</h1>
+      <?php
+     
+      ?>
+    </section>
   </section>
+ 
 @endsection

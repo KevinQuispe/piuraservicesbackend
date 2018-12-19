@@ -25,7 +25,7 @@
                 {!!form::select('entidadempresa_id', $empresaid,null,['class'=>'form-control'])!!}
               </div>
               <div class="form-group">
-                <label class="form-control-label" for="name"><strong>Nombre empresa:</strong></label>
+                <label class="form-control-label" for="name"><strong>Centro de atención:</strong></label>
                 {!!form::text('nombreempresa', null,['id'=>'nombreempresa','class'=>'form-control','placeholder'=>'Ingrese nombre de la empresa'])!!}
             </div>
             <div class="form-group">

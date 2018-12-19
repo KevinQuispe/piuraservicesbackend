@@ -59,13 +59,16 @@ class ContactosController extends Controller
     {
         $empresaid= EntidadEmpresa::where('id', '1')->pluck('nombre','id'); 
         $contactos = Contactos::FindOrFail($id);
-        return View('serviciospiura/entidadepsgrau/infocontactos.editcontactos',compact('contactos','empresaid'));
+        return View('serviciospiura.entidadepsgrau.infocontactos.editcontactos',compact('contactos','empresaid'));
     }  
     public function update(Request $request, $id)
     {
         $this->validate($request, [
             'nombreempresa'=>'required',
-            'numero' => 'required',
+            'direccion' => 'required',
+            'telefono' => 'required',
+            'horario' => 'required',
+            'tipoatencion' => 'required',
             'entidadempresa_id'=>'required'
         ]);
 

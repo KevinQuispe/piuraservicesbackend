@@ -29,7 +29,7 @@
           <thead class="thead-inverse">
             <tr>
               <th class="text-center">#</th>
-              <th>Nombre Empresa</th>
+              <th>Centro de atención</th>
               <th>Dirección</th>
               <th>Telefono</th>
               <th>Horario</th>

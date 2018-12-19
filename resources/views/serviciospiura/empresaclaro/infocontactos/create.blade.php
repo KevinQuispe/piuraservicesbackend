@@ -28,8 +28,8 @@
             </div>
             </br>
             <div class="form-group">
-              <label class="form-control-label col-md-4" for="name"><strong>Empresa:</strong></label>
-              {!!form::text('nombreempresa',null, ['id'=>'nombreempresa','class'=>'form-control offset  offset col-sm-12 col-md-6 col-lg-5','placeholder'=>'Ingrese nombre de la empresa'])!!}
+              <label class="form-control-label col-md-4" for="name"><strong>Centro de atención:</strong></label>
+              {!!form::text('nombreempresa',null, ['id'=>'nombreempresa','class'=>'form-control offset  offset col-sm-12 col-md-6 col-lg-5','placeholder'=>'Ingrese nombre del centro e atención'])!!}
           </div>
           </br>
           <div class="form-group">
