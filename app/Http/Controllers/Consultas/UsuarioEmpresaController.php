@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Consultas;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\User;
-use App\Models\Consultas\RolEmpresa;
+use App\RolEmpresa;
 
 class UsuarioEmpresaController extends Controller
 {
