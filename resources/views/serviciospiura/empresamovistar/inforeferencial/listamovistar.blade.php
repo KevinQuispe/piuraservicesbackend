@@ -26,8 +26,7 @@
       </div>
       <div class="card-block">
       <a href="{{url('/serviciospiura/empresamovistar/listar/create')}}" class="btn btn-success btn-sm margenInf fadeIn animated ion-plus-round"> Nuevo</a> &nbsp;
-        <table class="table table-striped table-hover table-bordered" id="myTable">
-
+        <table class="table table-striped table-hover table-responsive  table-bordered" id="myTable">
           <thead class="thead-inverse">
           <tr class="bg-primary">
               <th class="text-center">#</th>
@@ -36,7 +35,7 @@
               <th>Teléfono</th>
               <th>Correo</th>
               <th>Horario</th>
-              <th>Webentidad</th>
+              <th class="smallerCell">Webentidad</th>
               <th>Acciones</th>
             </tr>
           </thead>
@@ -53,8 +52,7 @@
                   <td class="text-center">
                     <a href="{{action('Admininfo\infotelefonia\TelefoniaController@edit', $empresa->id)}}" class="btn btn-outline-primary btn-sm ion-edit" title="Editar">Editar</a>
                     <a href="{{action('Admininfo\infotelefonia\TelefoniaController@show', $empresa->id)}}" class="btn btn-outline-danger btn-sm ion-android-delete" title="Eliminar">Eliminar</a>
-                    <!-- <a href="{{url('serviciospiura/empresamovistar/scraping')}}" class="btn btn-outline-success btn-sm ion-android-search" title="Compare web scraping">Web Scraping</a> -->
-                  
+              
                   </td>
                 </tr>
               @endforeach

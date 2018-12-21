@@ -25,7 +25,7 @@
       <a href="{{url('/serviciospiura/empresaclaro/contactos/create')}}" class="btn btn-success btn-sm margenInf fadeIn animated ion-plus-round"> Nuevo</a> &nbsp;
       <a href="{{url('/serviciospiura/empresaclaro/listar')}}" class="btn btn-info pull-right btn-sm margenInf fadeIn animated ion-plus-round">Volver</a> &nbsp;
   
-      <table class="table table-striped table-hover table-bordered" id="myTable">
+      <table class="table table-striped table-hover table-responsive table-bordered" id="myTable">
           <thead class="thead-inverse">
             <tr>
               <th class="text-center">#</th>

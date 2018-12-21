@@ -19,6 +19,8 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+
+
 //rutas crud entidad empresa epsgrau
 Route::resource('serviciospiura/entidadepsgrau/listar', 'Admininfo\infoepsgrau\EpsGrauController');
 Route::resource('serviciospiura/entidadepsgrau/reclamos', 'Admininfo\infoepsgrau\ReclamosController');

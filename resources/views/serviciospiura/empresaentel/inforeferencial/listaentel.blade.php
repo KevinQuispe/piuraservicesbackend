@@ -53,8 +53,7 @@
                   <td class="text-center">
                     <a href="{{action('Admininfo\infoentel\EntelController@edit', $empresa->id)}}" class="btn btn-outline-primary btn-sm ion-edit" title="Editar">Editar</a>
                     <a href="{{action('Admininfo\infoentel\EntelController@show', $empresa->id)}} " class="btn btn-outline-danger btn-sm ion-android-delete" title="Eliminar">Eliminar</a>
-                    <a href="{{url('serviciospiura/empresaentel/reclamos')}}" class="btn btn-outline-success btn-sm ion-android-search" title="Compare web scraping">Web Scraping</a>
-                  
+                    
                   </td>
                 </tr>
               @endforeach

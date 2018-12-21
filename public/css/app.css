@@ -259,6 +259,7 @@ th {
     .table td,
     .table th {
         background-color: #fff!important
+        
     }
     .table-bordered td,
     .table-bordered th {
@@ -6567,10 +6568,21 @@ button.close {
 
 /* mis cambios*/
 body{
-    background-color: #a5d6a7;
+    background-color: #e0e0e0;
+    position: relative;
+    width: 100%;
+    min-height: auto;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    background-position: center;
+    background-image:url('../tema/img/serviciosfondo.png');
+    background-repeat: no-repeat;
+    text-align: center;
 }
 .panel-body{
-      background-image:url('../tema/img/fondo.jpg');
+
       height: 100%; 
       /* Center and scale the image nicely  background-color:#00695c;*/
       background-position: center;
@@ -6586,4 +6598,7 @@ body{
     }
     .navbar-inverse .navbar-brand{
         color: white;
+    }
+    .smallerCell {
+        width: 25px;
     }

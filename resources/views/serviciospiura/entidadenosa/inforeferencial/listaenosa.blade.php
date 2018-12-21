@@ -26,7 +26,7 @@
       </div>
       <div class="card-block">
       <a href="{{url('/serviciospiura/entidadenosa/listar/create')}}" class="btn btn-success btn-sm margenInf fadeIn animated ion-plus-round"> Nuevo</a> &nbsp;
-        <table class="table table-striped table-hover table-bordered" id="myTable">
+        <table class="table table-striped table-responsive table-hover table-bordered" id="myTable">
 
           <thead class="thead-inverse">
           <tr class="bg-primary">
