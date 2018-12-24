@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Servicios basicos">
-    <meta name="keywords" content="Servicios Basiccos, Luz Agua, Telfonia">
+    <meta name="description" content="Servicios básicos Piura brindados por EPS Grau S.A, ENOSA, MOVISTAR, CLARO Y ENTEL">
+    <meta name="keywords" content="Servicios Básicios, Luz, Agua, Telefonía">
     <meta name="author" content="Kevin Quispe Rojas">
-    <title>Servicios Basicos Piura</title>
+    <title>Servicios Básicos Piura</title>
     <!-- Bootstrap Core CSS -->
     <link href="{{ asset('welcome/vendor/bootstrap/css/bootstrap.css') }}" rel="stylesheet">
     <!-- Custom Fonts -->
