@@ -30,7 +30,7 @@
             </div>
             <div class="form-group">
               <label class="form-control-label" for="telefono"><strong>Descripción:</strong></label>
-              {!!form::text('descripcion',null,['id'=>'descripcion','class'=>'form-control','placeholder'=>'descripcion del trámite'])!!}
+              {!!form::textarea('descripcion',null,['id'=>'descripcion','class'=>'form-control','placeholder'=>'descripcion del trámite'])!!}
             </div>
               <div class="pull-right">
               <div class="form-group">
