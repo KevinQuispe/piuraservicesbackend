@@ -14,7 +14,7 @@
       <h3 class="h2 fadeIn animated text-center ion-clipboard">INFORMACIÓN DE CONSULTA EMPRESA ENTEL</h3>
       <hr>
     </header>
-
+    @include('serviciospiura.mensajes.mensajes')
      <a href="{{url('serviciospiura/empresaentel/reclamos')}}" class="btn btn-danger btn-sm margenInf fadeIn animated ion-plus-round"> Información de reclamos</a> &nbsp;
      <a href="{{url('serviciospiura/empresaentel/tramites')}}" class="btn btn-warning btn-sm margenInf fadeIn animated ion-plus-round"> Información de tramites</a> &nbsp;    
      <a href="{{url('/serviciospiura/empresaentel/contactos')}}" class="btn btn-success btn-sm margenInf fadeIn animated ion-plus-round"> Lista de contactos</a> &nbsp;         

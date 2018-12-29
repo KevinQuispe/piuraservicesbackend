@@ -101,7 +101,7 @@ class EntelController extends Controller
         $entidad = EntidadEmpresa::find($id);
         $entidad->fill($request->all());
         $entidad->save();
-        Session::flash('save','Se ha creado correctamente');
+        Session::flash('save','Se ha actualizado correctamente');
         return redirect()->action('Admininfo\infoentel\EntelController@index');
      }
  

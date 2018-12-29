@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\User;
 use App\RolEmpresa;
-
+use Session;
 class UsuarioEmpresaController extends Controller
 {
     /**
@@ -53,7 +53,7 @@ class UsuarioEmpresaController extends Controller
             'email' =>  $request->email,
             'password' => bcrypt($request->password),
         ]);
-
+        Session::flash('save','Se ha creado correctamente');
         return redirect()->action('Consultas\UsuarioEmpresaController@index');
     }
 
@@ -103,7 +103,7 @@ class UsuarioEmpresaController extends Controller
   
         User::where('id',$id)->update(['rol_id'=>$request->rol_id,'name'=>$request->name,
           'email'=>$request->email,'password'=>bcrypt($request->password)]);
-
+        Session::flash('save','Se ha actualizado correctamente');      
         return redirect()->action('Consultas\UsuarioEmpresaController@index');
     }
 
@@ -117,7 +117,7 @@ class UsuarioEmpresaController extends Controller
     {
         $usuarios = User::FindOrFail($id);
         $usuarios->delete();
-        // Session::flash('delete','Se ha eliminado correctamente');
+        Session::flash('delete','Se ha eliminado correctamente');
         return redirect()->action('Consultas\UsuarioEmpresaController@index');
     }
 }

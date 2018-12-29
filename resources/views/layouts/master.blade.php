@@ -201,7 +201,7 @@
     </div>
 
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}"></script>
+    <!-- <script src="{{ asset('js/app.js') }}"></script> -->
 
     <!-- JavaScript files-->
     <script src="{{ asset('tema/vendor/jquery/jquery.min.js')}}"></script>

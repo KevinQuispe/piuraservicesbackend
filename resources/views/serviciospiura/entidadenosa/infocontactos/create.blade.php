@@ -21,7 +21,6 @@
             <div class="card-block">
               <p>Nuevo contacto</p>
               {!! Form::open(['action'=>'Admininfo\infoenosa\ContactosController@store','method'=>'POST'])!!}
-              @include('serviciospiura.mensajes.mensajes')
               <div class="form-group">
               <label class="form-control-label col-md-4"><strong>idEntidad</strong></label>
               {!!form::select('entidadempresa_id', $empresaid,null,['class'=>'form-control'])!!}

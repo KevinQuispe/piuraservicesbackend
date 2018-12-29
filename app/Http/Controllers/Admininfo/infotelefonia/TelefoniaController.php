@@ -50,7 +50,7 @@ class TelefoniaController extends Controller
         ]);
     
         EntidadEmpresa::create($request->all());
-        Session::flash('save','Se ha creado correctamente');
+        Session::flash('save','Se ha actualizado correctamente');
         return redirect()->action('Admininfo\infotelefonia\TelefoniaController@index');
       
      }
@@ -63,7 +63,7 @@ class TelefoniaController extends Controller
       */
      public function show($id)
      {
-        $empresa = \DB::table('entidadempresa')->where('id', '3')->first();
+        $empresa = \DB::table('entidadempresa')->where('id', $id)->first();
         return view('serviciospiura.empresamovistar.inforeferencial.show',compact('empresa'));
      }
  
@@ -100,7 +100,7 @@ class TelefoniaController extends Controller
         $entidad = EntidadEmpresa::find($id);
         $entidad->fill($request->all());
         $entidad->save();
-        Session::flash('save','Se ha creado correctamente');
+        Session::flash('save','Se ha actualizado correctamente');
         return redirect()->action('Admininfo\infotelefonia\TelefoniaController@index');  
      }
  

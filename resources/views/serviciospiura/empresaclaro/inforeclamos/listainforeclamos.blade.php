@@ -14,7 +14,7 @@
       <h3 class="h2 fadeIn animated text-center ion-clipboard">INFORMACIÓN DE CONSULTA CLARO</h3>
       <hr>
     </header>
-   
+    @include('serviciospiura.mensajes.mensajes')
   <div class="row"> 
     <div class="col-lg-12">
     <div class="card miBorder fadeIn animated">

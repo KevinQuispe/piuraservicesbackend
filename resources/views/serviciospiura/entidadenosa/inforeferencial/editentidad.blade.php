@@ -18,7 +18,6 @@
             <div class="card-header d-flex align-items-center">
               <h2 class="h1 display display">Editar datos de Entidad:</h2>
             </div>
-            @include('serviciospiura.mensajes.mensajes')
             <div class="card-block">
               {!!Form::model($entidad, ['action'=>['Admininfo\infoenosa\EnosaController@update',$entidad->id],'method'=>'PUT'])!!}
               <div class="form-group">

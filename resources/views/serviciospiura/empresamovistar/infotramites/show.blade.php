@@ -29,24 +29,12 @@
               {!!form::select('entidadempresa_id', $empresaid,null,['class'=>'form-control'])!!}
             </div>
             <div class="form-group">
-              <strong>{!!form::label('Nombre Empresa:')!!}</strong>
-              {!!$empresa->nombreempresa!!}
+              <strong>{!!form::label('Nombre:')!!}</strong>
+              {!!$tramites->nombre!!}
             </div>
             <div class="form-group">
-              <strong>{!!form::label('Dirección:')!!}</strong>
-              {!!$empresa->direccion!!}
-            </div>
-            <div class="form-group">
-              <strong>{!!form::label('Teléfono:')!!}</strong>
-              {!!$empresa->telefono!!}
-            </div>
-            <div class="form-group">
-              <strong>{!!form::label('Horario:')!!}</strong>
-              {!!$empresa->horario!!}
-            </div>
-            <div class="form-group">
-              <strong>{!!form::label('Tipo de atención:')!!}</strong>
-              {!!$empresa->tipoatencion!!}
+              <strong>{!!form::label('Descripción:')!!}</strong>
+              {!!$tramites->descripcion!!}
             </div>
               <div class="form-group">
                 <a href="{{url('/serviciospiura/empresamovistar/tramites')}}" class="btn btn-secondary">Cancelar</a>

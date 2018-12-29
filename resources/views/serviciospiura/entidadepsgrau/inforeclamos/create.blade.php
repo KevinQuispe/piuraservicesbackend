@@ -21,17 +21,16 @@
             <div class="card-block">
               <p>Registrar datos de reclamo</p>
               {!! Form::open(['action'=>'Admininfo\infoepsgrau\ReclamosController@store','method'=>'POST'])!!}
-              @include('serviciospiura.mensajes.mensajes')
               <div class="form-group">
                 <label class="form-control-label col-md-4"><strong>idempresa</strong></label>
                 {!!form::select('entidadempresa_id', $empresaid,null,['class'=>'form-control'])!!}
               </div>
-              </br>
+              <br/>
               <div class="form-group">
                 <label class="form-control-label col-md-4" for="name"><strong>Nombre</strong></label>
                 {!!form::text('nombre', null,['id'=>'nombre','class'=>'form-control offset  offset col-sm-12 col-md-6 col-lg-5','placeholder'=>'Ingrese nombre del reclamo'])!!}
             </div>
-            </br>
+            <br/>
             <div class="form-group">
                 <label class="form-control-label col-md-4" for="name"><strong>Descripción:</strong></label>
                 {!!form::textarea('descripcion', null,['id'=>'descripcion','class'=>'form-control offset  offset col-sm-12 col-md-6 col-lg-5','placeholder'=>'Ingrese descripcion del reclamo'])!!}

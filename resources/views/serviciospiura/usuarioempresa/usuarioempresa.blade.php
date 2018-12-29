@@ -14,6 +14,7 @@
       <header>
         <h1 class="h2 fadeIn animated text-center ion-clipboard">Usuarios del Sistema</h1>
       </header>
+      @include('serviciospiura.mensajes.mensajes')
       <a href="{{url('/serviciospiura/usuarioempresa/create')}}" class="btn btn-success btn-sm margenInf fadeIn animated ion-plus-round"> Nuevo</a> &nbsp;
     
       <div class="row">
