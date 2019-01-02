@@ -29,12 +29,12 @@
             <br>
             <div class="form-group">
                 <label class="form-control-label col-md-4" for="name"><strong>Nombre de reclamo:</strong></label>
-                {!!form::text('nombre', null,['id'=>'nombre','class'=>'form-control offset  offset col-sm-12 col-md-6 col-lg-5','placeholder'=>'ingrese nombre del reclamo'])!!}
+                {!!form::text('nombre', null,['id'=>'nombre','class'=>'form-control offset  offset col-sm-12 col-md-6 col-lg-5','placeholder'=>'Ingrese nombre del reclamo'])!!}
             </div>
             <br>
               <div class="form-group">
                 <label class="form-control-label col-md-4" for="email"><strong>Descripcion:</strong></label>
-                {!!form::textarea('descripcion', null,['id'=>'descripcion','class'=>'form-control offset col-sm-12 col-md-6 col-lg-5','placeholder'=>'descripcion del reclamo'])!!}
+                {!!form::textarea('descripcion', null,['id'=>'descripcion','class'=>'form-control offset col-sm-12 col-md-6 col-lg-5','placeholder'=>'Ingrese descripcion del reclamo'])!!}
               </div>
               <br>
               <div class="pull-right">

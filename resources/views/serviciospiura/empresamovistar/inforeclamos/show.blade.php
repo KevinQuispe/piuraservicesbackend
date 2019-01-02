@@ -20,7 +20,7 @@
               <h2 class="h1 display display"><strong style="color:#f00">Eliminar Entidad empresa:</strong></h2>
             </div>
             <div class="card-block">
-              <p>¿Desea eliminar datos de empresa?.</p>
+              <p>¿Desea eliminar datos del reclamo?.</p>
               {!!Form::open(['action'=>['Admininfo\infotelefonia\ReclamosController@destroy',$empresa->id],'method'=>'DELETE'])!!}
              
               <div class="form-group">
@@ -35,10 +35,7 @@
                 <strong>{!!form::label('Descripcion:')!!}</strong>
                 {!!$empresa->descripcion!!}
               </div>
-              <!--<div class="form-group">
-                <strong>{ !!form::label('Password:')!!}</strong>
-                { !!$usuario->password!!}
-              </div>-->
+            
               <div class="form-group">
                 <a href="{{url('/serviciospiura/empresamovistar/reclamos')}}" class="btn btn-secondary">Cancelar</a>
                 {!!form::submit('Eliminar',['name'=>'grabar','id'=>'grabar','content'=>'<span class="glyphicon glyphicon-floppy-disk">Eliminar</span>','class'=>'btn

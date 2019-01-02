@@ -21,7 +21,6 @@
             <div class="card-block">
               <p>Ingrese los datos del Reclamo</p>
               {!! Form::open(['action'=>'Admininfo\infoclaro\ReclamosController@store','method'=>'POST'])!!}
-              @include('serviciospiura.mensajes.mensajes')
               <div class="form-group">
                 <label class="form-control-label col-md-4" for="name"><strong>Entidad:</strong></label>
                 {!!form::select('entidadempresa_id', $empresaid,null,['class'=>'form-control'])!!}

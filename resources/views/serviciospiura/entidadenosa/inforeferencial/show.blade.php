@@ -47,10 +47,7 @@
                 <strong>{!!form::label('Página web:')!!}</strong>
                 {!!$empresa->webentidad!!}
               </div>
-              <!--<div class="form-group">
-                <strong>{ !!form::label('Password:')!!}</strong>
-                { !!$usuario->password!!}
-              </div>-->
+          
               <div class="form-group">
                 <a href="{{url('/serviciospiura/entidadenosa/listar')}}" class="btn btn-secondary">Cancelar</a>
                 {!!form::submit('Eliminar',['name'=>'grabar','id'=>'grabar','content'=>'<span class="glyphicon glyphicon-floppy-disk">Eliminar</span>','class'=>'btn

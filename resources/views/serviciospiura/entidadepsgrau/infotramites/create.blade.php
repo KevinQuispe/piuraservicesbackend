@@ -19,7 +19,7 @@
               <h2 class="h1 display display">Registrar Tramite</h2>
             </div>
             <div class="card-block">
-              <p>Tramite documentario</p>
+              <p>Registrar datos de trámite</p>
               {!! Form::open(['action'=>'Admininfo\infoepsgrau\TramitesController@store','method'=>'POST'])!!}
               @include('serviciospiura.mensajes.mensajes')
               <div class="form-group">
