@@ -23,7 +23,7 @@
               {!! Form::open(['action'=>'Admininfo\infoenosa\EnosaController@store','method'=>'POST'])!!}
               <div class="form-group">
                 <label class="form-control-label col-md-4" for="name"><strong>Nombre Entidad:</strong></label>
-                {!!form::text('nombre', null,['id'=>'nombre','class'=>'form-control offset  offset col-sm-12 col-md-6 col-lg-5','placeholder'=>'Ingrese Nombre empresa'])!!}
+                {!!form::text('nombre', null,['id'=>'nombre','class'=>'form-control offset  offset col-sm-12 col-md-6 col-lg-5','placeholder'=>'Ingrese nombre empresa'])!!}
             </div>
             <br/>
             <div class="form-group">

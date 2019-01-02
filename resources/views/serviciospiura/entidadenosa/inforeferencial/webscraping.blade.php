@@ -22,8 +22,7 @@
         </div>
       <div class="card-block">
         <table class="table table-striped table-hover table-bordered" id="myTable">
-
-
+        
           <thead class="thead-inverse">
             <tr>
               <th class="text-center">#</th>

@@ -31,7 +31,7 @@
               <th class="text-center">#</th>
               <th>Entidad</th>
               <th>Dirección</th>
-              <th>Telefono</th>
+              <th>Teléfono</th>
               <th>Horario</th>
               <th>Tipo Atencion</th>
               <th>Acciones</th>

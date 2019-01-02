@@ -38,7 +38,7 @@
             <br>
               <div class="form-group">
                 <label class="form-control-label col-md-4" for="email"><strong>Dirección:</strong></label>
-                {!!form::text('direccion', null,['id'=>'direccion','class'=>'form-control offset col-sm-12 col-md-6 col-lg-5','placeholder'=>'Ingrese Dirección'])!!}
+                {!!form::text('direccion', null,['id'=>'direccion','class'=>'form-control offset col-sm-12 col-md-6 col-lg-5','placeholder'=>'Ingrese dirección'])!!}
               </div>
               <br>
               <div class="form-group">
@@ -48,7 +48,7 @@
               <br>
               <div class="form-group">
                 <label class="form-control-label col-md-4" for="email"><strong>Horario:</strong></label>
-                {!!form::text('horario', null,['id'=>'horario','class'=>'form-control offset col-sm-12 col-md-6 col-lg-5','placeholder'=>'Ingrese Horario de atención'])!!}
+                {!!form::text('horario', null,['id'=>'horario','class'=>'form-control offset col-sm-12 col-md-6 col-lg-5','placeholder'=>'Ingrese horario de atención'])!!}
               </div>
               <br>
               <div class="form-group">
