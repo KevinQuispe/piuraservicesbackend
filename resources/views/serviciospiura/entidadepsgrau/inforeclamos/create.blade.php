@@ -19,7 +19,7 @@
               <h2 class="h1 display display">Registrar Reclamo</h2>
             </div>
             <div class="card-block">
-              <p>Registrar datos de reclamo</p>
+              <p>Registrar datos del reclamo</p>
               {!! Form::open(['action'=>'Admininfo\infoepsgrau\ReclamosController@store','method'=>'POST'])!!}
               <div class="form-group">
                 <label class="form-control-label col-md-4"><strong>idempresa</strong></label>
