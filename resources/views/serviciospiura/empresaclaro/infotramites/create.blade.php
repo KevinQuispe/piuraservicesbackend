@@ -16,7 +16,7 @@
         <div class="offset col-md">
           <div class="card miBorder">
             <div class="card-header d-flex align-items-center bg-primary">
-              <h2 class="h1 display display">Registrar Tramite</h2>
+              <h2 class="h1 display display">Registrar trámite</h2>
             </div>
             <div class="card-block">
               <p>Ingrese los datos del trámite</p>
