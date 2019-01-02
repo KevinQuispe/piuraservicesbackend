@@ -67,7 +67,7 @@ class TramitesController extends Controller
         $tramites = InfoTramites::FindOrFail($id);
          return view('serviciospiura.empresamovistar.infotramites.show',compact('tramites','empresaid'));
     }
-
+    
     /**
      * Show the form for editing the specified resource.
      *
@@ -79,6 +79,7 @@ class TramitesController extends Controller
         $empresaid= EntidadEmpresa::where('id', '3')->pluck('nombre','id');
         $tramites = InfoTramites::FindOrFail($id);
         return View('serviciospiura.empresamovistar.infotramites.edittramites',compact('tramites','empresaid'));
+       
     }
 
     /**
@@ -99,7 +100,7 @@ class TramitesController extends Controller
         $entidad = InfoTramites::find($id);
         $entidad->fill($request->all());
         $entidad->save();
-        Session::flash('save','Se ha creado correctamente');
+        Session::flash('save','Se ha actualizado correctamente');
         return redirect()->action('Admininfo\infotelefonia\TramitesController@index');
     }
 

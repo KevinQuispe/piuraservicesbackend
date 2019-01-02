@@ -35,7 +35,6 @@
                 <strong>{!!form::label('Descripcion:')!!}</strong>
                 {!!$tramites->descripcion!!}
               </div>
-            
               <div class="form-group">
                 <a href="{{url('/serviciospiura/empresaentel/tramites')}}" class="btn btn-secondary">Cancelar</a>
                 {!!form::submit('Eliminar',['name'=>'grabar','id'=>'grabar','content'=>'<span class="glyphicon glyphicon-floppy-disk">Eliminar</span>','class'=>'btn

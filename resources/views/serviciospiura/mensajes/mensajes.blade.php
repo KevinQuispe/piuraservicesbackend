@@ -13,19 +13,28 @@
 @endif
 
 @if (Session::has('update'))
-  <div class="alert-success" role="alert">
-   <strong>{{Session::get('update')}}</strong>
+  <div class="alert alert-success alert-dismissible fade show fadeIn animated" role="alert">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    <strong>{{Session::get('update')}}</strong>
   </div>
 @endif
 
 @if (Session::has('delete'))
-  <div class="alert-danger" role="alert">
-   <strong>{{Session::get('delete')}}</strong>
+  <div class="alert alert-success alert-dismissible fade show fadeIn animated" role="alert">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    <strong>{{Session::get('delete')}}</strong>
   </div>
 @endif
 
 @if(Session::has('save'))
-  <div class="alert-success" role="alert">
-   <strong>{{Session::get('save')}}</strong>
+<div class="alert alert-success alert-dismissible fade show fadeIn animated" role="alert">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    <strong>{{Session::get('save')}}</strong>
   </div>
 @endif

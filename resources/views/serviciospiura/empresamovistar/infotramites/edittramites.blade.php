@@ -16,7 +16,7 @@
         <div class="offset-lg-2 col-lg-7">
           <div class="card miBorder">
             <div class="card-header d-flex align-items-center">
-              <h2 class="h1 display display">Editar datos de Entidad:</h2>
+              <h2 class="h1 display display">Editar Trámite:</h2>
             </div>
             <div class="card-block">
               {!!Form::model($tramites, ['action'=>['Admininfo\infotelefonia\TramitesController@update',$tramites->id],'method'=>'PUT'])!!}
@@ -25,12 +25,12 @@
                 {!!form::select('entidadempresa_id', $empresaid,null,['class'=>'form-control'])!!}
               </div>
             <div class="form-group">
-                <label class="form-control-label" for="direccion"><strong>Nombre:</strong></label>
-                {!!form::text('nombre', null,['id'=>'nombre','class'=>'form-control','placeholder'=>'Nombre'])!!}
+                <label class="form-control-label" for="direccion"><strong>Nombre trámite:</strong></label>
+                {!!form::text('nombre', null,['id'=>'nombre','class'=>'form-control','placeholder'=>'Ingrese nombre de tramite'])!!}
               </div>
               <div class="form-group">
                 <label class="form-control-label" for="telefono"><strong>Descripcion:</strong></label>
-                {!!form::textarea('descripcion',null,['id'=>'descripcion','class'=>'form-control','placeholder'=>'descripcion'])!!}
+                {!!form::textarea('descripcion',null,['id'=>'descripcion','class'=>'form-control','placeholder'=>'Ingese descripcion'])!!}
               </div>
               <div class="pull-right">
               <div class="form-group">

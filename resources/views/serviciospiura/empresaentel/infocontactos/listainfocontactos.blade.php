@@ -14,7 +14,7 @@
       <h3 class="h2 fadeIn animated text-center ion-clipboard">INFORMACIÓN DE CONSULTA ENTEL</h3>
       <hr>
     </header>
-   
+    @include('serviciospiura.mensajes.mensajes')
   <div class="row"> 
     <div class="col-lg-12">
     <div class="card miBorder fadeIn animated">
@@ -49,7 +49,6 @@
                   <td class="text-center">
                     <a href="{{action('Admininfo\infoentel\ContactosController@edit', $reclamos->id)}}" class="btn btn-outline-primary btn-sm ion-edit" title="Editar">Editar</a>
                     <a href="{{action('Admininfo\infoentel\ContactosController@show', $reclamos->id)}}" class="btn btn-outline-danger btn-sm ion-android-delete" title="Eliminar">Eliminar</a>
-                    
                   </td>
                 </tr>
               @endforeach

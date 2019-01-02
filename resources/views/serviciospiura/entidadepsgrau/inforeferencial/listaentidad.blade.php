@@ -13,6 +13,7 @@
     <header>
       <h3 class="h2 fadeIn animated text-center ion-clipboard">INFORMACIÓN DE CONSULTA EPS GRAU S.A</h3>
       <hr>
+      @include('serviciospiura.mensajes.mensajes')
     </header>
     <!-- rutas -->
      <a href="{{url('/serviciospiura/entidadepsgrau/reclamos')}}" class="btn btn-danger btn-sm margenInf fadeIn animated ion-plus-round"> Información de reclamos</a> &nbsp;
@@ -27,7 +28,6 @@
       <div class="card-block">
       <a href="{{url('/serviciospiura/entidadepsgrau/listar/create')}}" class="btn btn-success btn-sm margenInf fadeIn animated ion-plus-round"> Nuevo</a> &nbsp;
         <table class="table table-striped table-responsive table-hover table-bordered" id="myTable">
-
           <thead class="thead-inverse">
           <tr class="bg-primary">
               <th class="text-center">#</th>

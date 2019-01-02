@@ -21,17 +21,16 @@
             <div class="card-block">
               <p>Ingrese los datos del trámite</p>
               {!! Form::open(['action'=>'Admininfo\infoclaro\TramitesController@store','method'=>'POST'])!!}
-              @include('serviciospiura.mensajes.mensajes')
               <div class="form-group">
                 <label class="form-control-label col-md-4" for="name"><strong>Idempresa</strong></label>
                 {!!form::select('entidadempresa_id', $empresaid,null,['class'=>'form-control'])!!}
             </div>
-            </br>
+            <br/>
             <div class="form-group">
                 <label class="form-control-label col-md-4" for="name"><strong>Nombre:</strong></label>
                 {!!form::text('nombre', null,['id'=>'nombre','class'=>'form-control offset  offset col-sm-12 col-md-6 col-lg-5','placeholder'=>'Ingrese nombre de trámite'])!!}
             </div>
-            <br>
+            <br/>
             <div class="form-group">
                 <label class="form-control-label col-md-4" for="name"><strong>Descripcion:</strong></label>
                 {!!form::textarea('descripcion', null,['id'=>'descripcion','class'=>'form-control offset  offset col-sm-12 col-md-6 col-lg-5','placeholder'=>'Ingrese descripción de trámite'])!!}

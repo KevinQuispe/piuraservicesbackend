@@ -21,7 +21,6 @@
             <div class="card-block">
               <p>Ingrese los datos del reclamo</p>
               {!! Form::open(['action'=>'Admininfo\infotelefonia\ReclamosController@store','method'=>'POST'])!!}
-              @include('serviciospiura.mensajes.mensajes')
               <div class="form-group">
                 <label class="form-control-label col-md-4" for="name"><strong>Entidad:</strong></label>
                 {!!form::select('entidadempresa_id', $empresaid,null,['class'=>'form-control'])!!}
@@ -29,12 +28,12 @@
             <br>
             <div class="form-group">
                 <label class="form-control-label col-md-4" for="name"><strong>Nombre:</strong></label>
-                {!!form::text('nombre', null,['id'=>'nombre','class'=>'form-control offset  offset col-sm-12 col-md-6 col-lg-5','placeholder'=>'Ingrese nombre de reclamo'])!!}
+                {!!form::text('nombre', null,['id'=>'nombre','class'=>'form-control offset  offset col-sm-12 col-md-6 col-lg-5','placeholder'=>'Ingrese nombre del reclamo'])!!}
             </div>
             <br>
               <div class="form-group">
                 <label class="form-control-label col-md-4" for="email"><strong>Descripcion:</strong></label>
-                {!!form::textarea('descripcion', null,['id'=>'descripcion','class'=>'form-control offset col-sm-12 col-md-6 col-lg-5','placeholder'=>'Ingrese descripcion del reclamo'])!!}
+                {!!form::textarea('descripcion', null,['id'=>'descripcion','class'=>'form-control offset col-sm-12 col-md-6 col-lg-5','placeholder'=>'Ingrsee descripción'])!!}
               </div>
               <br>
               <div class="pull-right">

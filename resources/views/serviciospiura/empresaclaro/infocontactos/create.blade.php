@@ -21,25 +21,24 @@
             <div class="card-block">
               <p>Nuevo contacto</p>
               {!! Form::open(['action'=>'Admininfo\infoclaro\ContactosController@store','method'=>'POST'])!!}
-              @include('serviciospiura.mensajes.mensajes')
               <div class="form-group">
               <label class="form-control-label col-md-4"><strong>idEntidad</strong></label>
               {!!form::select('entidadempresa_id', $empresaid,null,['class'=>'form-control'])!!}
             </div>
-            </br>
+            <br/>
             <div class="form-group">
               <label class="form-control-label col-md-4" for="name"><strong>Centro de atención:</strong></label>
               {!!form::text('nombreempresa',null, ['id'=>'nombreempresa','class'=>'form-control offset  offset col-sm-12 col-md-6 col-lg-5','placeholder'=>'Ingrese nombre del centro e atención'])!!}
           </div>
-          </br>
+          <br/>
           <div class="form-group">
               <label class="form-control-label col-md-4" for="name"><strong>Dirección:</strong></label>
               {!!form::text('direccion',null,['id'=>'direccion','class'=>'form-control offset  offset col-sm-12 col-md-6 col-lg-5','placeholder'=>'Ingrese dirección'])!!}
           </div>
-          </br>
+          <br/>
           <div class="form-group">
               <label class="form-control-label col-md-4" for="name"><strong>Telefono:</strong></label>
-              {!!form::text('telefono',null,['id'=>'telefono','class'=>'form-control offset  offset col-sm-12 col-md-6 col-lg-5','placeholder'=>'Ingrese número telefónico'])!!}
+              {!!form::text('telefono',null,['id'=>'telefono','class'=>'form-control offset  offset col-sm-12 col-md-6 col-lg-5','placeholder'=>'Ingrese número teléfonico'])!!}
           </div>
           <br>
           <div class="form-group">
