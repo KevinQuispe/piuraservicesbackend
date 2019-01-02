@@ -22,7 +22,7 @@
               {!!Form::model($entidad, ['action'=>['Admininfo\infoepsgrau\EpsGrauController@update',$entidad->id],'method'=>'PUT'])!!}
               <div class="form-group">
                 <label class="form-control-label" for="name"><strong>Nombre de Entidad</strong></label>
-                {!!form::text('nombre', null,['id'=>'nombre','class'=>'form-control','placeholder'=>'Ingrese Nombre'])!!}
+                {!!form::text('nombre', null,['id'=>'nombre','class'=>'form-control','placeholder'=>'Ingrese nombre de la empresa'])!!}
             </div>
             <div class="form-group">
                 <label class="form-control-label" for="direccion"><strong>Dirección:</strong></label>
@@ -30,19 +30,19 @@
               </div>
               <div class="form-group">
                 <label class="form-control-label" for="telefono"><strong>Teléfono:</strong></label>
-                {!!form::text('telefono',null,['id'=>'telefono','class'=>'form-control','placeholder'=>'teléfono'])!!}
+                {!!form::text('telefono',null,['id'=>'telefono','class'=>'form-control','placeholder'=>'Ingrese número telfónico'])!!}
               </div>
               <div class="form-group">
                 <label class="form-control-label" for="password"><strong>Correo:</strong></label>
-                {!!form::text('correo',null,['id'=>'correo','class'=>'form-control','placeholder'=>'Correo'])!!}
+                {!!form::text('correo',null,['id'=>'correo','class'=>'form-control','placeholder'=>'Ingrese correo electronico'])!!}
               </div>
               <div class="form-group">
                 <label class="form-control-label" for="password"><strong>Horario:</strong></label>
-                {!!form::text('horario',null,['id'=>'horario','class'=>'form-control','placeholder'=>'Horario de atención '])!!}
+                {!!form::text('horario',null,['id'=>'horario','class'=>'form-control','placeholder'=>'Ingrese horario de atención '])!!}
               </div>
               <div class="form-group">
                 <label class="form-control-label" for="password"><strong>Página web:</strong></label>
-                {!!form::text('webentidad',null,['id'=>'horario','class'=>'form-control','placeholder'=>'web'])!!}
+                {!!form::text('webentidad',null,['id'=>'horario','class'=>'form-control','placeholder'=>'Ingrese dirección de página de web'])!!}
                 </div>
               <div class="form-group">
               {!!form::submit('Guardar',['name'=>'grabar','id'=>'grabar','content'=>'<span class="glyphicon glyphicon-floppy-disk">Guardar</span>',

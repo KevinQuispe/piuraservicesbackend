@@ -50,7 +50,7 @@ class TramitesController extends Controller
         ]);
     
         InfoTramites::create($request->all());
-        Session::flash('save','Se ha actualizado correctamente');
+        Session::flash('save','Se ha creado correctamente');
         return redirect()->action('Admininfo\infoenosa\TramitesController@index');
      
     }

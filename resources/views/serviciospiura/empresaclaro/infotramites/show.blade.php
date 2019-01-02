@@ -17,7 +17,7 @@
           <br/>
           <div class="card miBorder">
             <div class="card-header d-flex align-items-center">
-              <h2 class="h1 display display"><strong style="color:#f00">Eliminar Entidad empresa:</strong></h2>
+              <h2 class="h1 display display"><strong style="color:#f00">Eliminar Trámite:</strong></h2>
             </div>
             <div class="card-block">
               <p>¿Desea eliminar datos de trámite?.</p>
@@ -35,11 +35,7 @@
                 <strong>{!!form::label('Descripcion:')!!}</strong>
                 {!!$tramites->descripcion!!}
               </div>
-                  <!--<div class="form-group">
-                <strong>{ !!form::label('Password:')!!}</strong>
-                { !!$usuario->password!!}
-              </div>-->
-              <div class="form-group">
+                <div class="form-group">
                 <a href="{{url('/serviciospiura/empresaclaro/tramites')}}" class="btn btn-secondary">Cancelar</a>
                 {!!form::submit('Eliminar',['name'=>'grabar','id'=>'grabar','content'=>'<span class="glyphicon glyphicon-floppy-disk">Eliminar</span>','class'=>'btn
                   btn-danger'])!!}

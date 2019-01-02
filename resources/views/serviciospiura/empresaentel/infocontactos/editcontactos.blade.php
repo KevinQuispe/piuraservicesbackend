@@ -34,7 +34,7 @@
           </div>
             <div class="form-group">
               <label class="form-control-label" for="name"><strong>Telefono:</strong></label>
-              {!!form::text('telefono',null,['id'=>'telefono','class'=>'form-control','placeholder'=>'teléfono'])!!}
+              {!!form::text('telefono',null,['id'=>'telefono','class'=>'form-control','placeholder'=>'Ingrese número telefónico'])!!}
             </div>
             <div class="form-group">
               <label class="form-control-label" for="name"><strong>Horario de atención:</strong></label>

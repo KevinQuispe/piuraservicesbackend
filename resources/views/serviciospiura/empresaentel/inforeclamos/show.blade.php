@@ -35,11 +35,7 @@
                 <strong>{!!form::label('Descripcion:')!!}</strong>
                 {!!$empresa->descripcion!!}
               </div>
-              <!--<div class="form-group">
-                <strong>{ !!form::label('Password:')!!}</strong>
-                { !!$usuario->password!!}
-              </div>-->
-              <div class="form-group">
+                <div class="form-group">
                 <a href="{{url('/serviciospiura/empresaentel/reclamos')}}" class="btn btn-secondary">Cancelar</a>
                 {!!form::submit('Eliminar',['name'=>'grabar','id'=>'grabar','content'=>'<span class="glyphicon glyphicon-floppy-disk">Eliminar</span>','class'=>'btn
                   btn-danger'])!!}

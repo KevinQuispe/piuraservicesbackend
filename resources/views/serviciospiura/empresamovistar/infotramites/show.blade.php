@@ -21,9 +21,7 @@
             </div>
             <div class="card-block">
               <p>¿Desea eliminar datos de trámite?.</p>
-              {!!Form::open(['action'=>['Admininfo\infotelefonia\TramitesController@destroy',$tramites->id],'method'=>'DELETE'])!!}
-              
-              
+              {!!Form::open(['action'=>['Admininfo\infotelefonia\TramitesController@destroy',$tramites->id],'method'=>'DELETE'])!!}   
               <div class="form-group">
               <strong>{!!form::label('idempresa:')!!}</strong>
               {!!form::select('entidadempresa_id', $empresaid,null,['class'=>'form-control'])!!}

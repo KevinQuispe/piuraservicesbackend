@@ -49,7 +49,6 @@
                   <td class="text-center">
                     <a href="{{action('Admininfo\infoentel\ContactosController@edit', $reclamos->id)}}" class="btn btn-outline-primary btn-sm ion-edit" title="Editar">Editar</a>
                     <a href="{{action('Admininfo\infoentel\ContactosController@show', $reclamos->id)}}" class="btn btn-outline-danger btn-sm ion-android-delete" title="Eliminar">Eliminar</a>
-                    
                   </td>
                 </tr>
               @endforeach

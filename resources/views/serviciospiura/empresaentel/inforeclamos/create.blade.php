@@ -38,7 +38,6 @@
               <br>
               <div class="pull-right">
               <div class="form-group">
-
                 {!!form::submit('Guardar',['name'=>'grabar','id'=>'grabar','content'=>'
                 <span class="glyphicon glyphicon-floppy-disk">Guardar</span>',
                 'class'=>'btn btn-success ion-ios-checkmark-outline btn-sm'])!!}

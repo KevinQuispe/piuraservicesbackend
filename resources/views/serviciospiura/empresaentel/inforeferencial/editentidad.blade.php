@@ -31,15 +31,15 @@
               </div>
               <div class="form-group">
                 <label class="form-control-label" for="telefono"><strong>Teléfono:</strong></label>
-                {!!form::text('telefono',null,['id'=>'telefono','class'=>'form-control','placeholder'=>'teléfono'])!!}
+                {!!form::text('telefono',null,['id'=>'telefono','class'=>'form-control','placeholder'=>'Ingrese numero telefónico'])!!}
               </div>
               <div class="form-group">
                 <label class="form-control-label" for="password"><strong>Correo:</strong></label>
-                {!!form::text('correo',null,['id'=>'correo','class'=>'form-control','placeholder'=>'Correo'])!!}
+                {!!form::text('correo',null,['id'=>'correo','class'=>'form-control','placeholder'=>'Ingrese correo electronic'])!!}
               </div>
               <div class="form-group">
                 <label class="form-control-label" for="password"><strong>Horario:</strong></label>
-                {!!form::text('horario',null,['id'=>'horario','class'=>'form-control','placeholder'=>'Horario de atención '])!!}
+                {!!form::text('horario',null,['id'=>'horario','class'=>'form-control','placeholder'=>'Ingrese horario de atención '])!!}
               </div>
               <div class="form-group">
                 <label class="form-control-label" for="password"><strong>Página web:</strong></label>

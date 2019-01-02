@@ -63,11 +63,11 @@ class TramitesController extends Controller
      */
     public function show($id)
     {
-        $empresaid= EntidadEmpresa::where('id', $id)->pluck('nombre','id');
+        $empresaid= EntidadEmpresa::where('id', '3')->pluck('nombre','id');
         $tramites = InfoTramites::FindOrFail($id);
          return view('serviciospiura.empresamovistar.infotramites.show',compact('tramites','empresaid'));
     }
-
+    
     /**
      * Show the form for editing the specified resource.
      *
@@ -76,9 +76,10 @@ class TramitesController extends Controller
      */
     public function edit($id)
     {
-        $empresaid= EntidadEmpresa::where('id', $id)->pluck('nombre','id');
+        $empresaid= EntidadEmpresa::where('id', '3')->pluck('nombre','id');
         $tramites = InfoTramites::FindOrFail($id);
         return View('serviciospiura.empresamovistar.infotramites.edittramites',compact('tramites','empresaid'));
+       
     }
 
     /**
