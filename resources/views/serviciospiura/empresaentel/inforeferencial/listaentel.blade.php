@@ -49,7 +49,7 @@
                   <td>{{$empresa->telefono}}</td>
                   <td>{{$empresa->correo}}</td>
                   <td>{{$empresa->horario}}</td>
-                  <td>{{$empresa->webentidad}}</td>
+                  <td><a href="http://www.entel.com.pe/" target="_blank" title="Open Web">{{$empresa->webentidad}}</td></a>
                   <td class="text-center">
                     <a href="{{action('Admininfo\infoentel\EntelController@edit', $empresa->id)}}" class="btn btn-outline-primary btn-sm ion-edit" title="Editar">Editar</a>
                     <a href="{{action('Admininfo\infoentel\EntelController@show', $empresa->id)}} " class="btn btn-outline-danger btn-sm ion-android-delete" title="Eliminar">Eliminar</a>
