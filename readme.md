@@ -1,4 +1,4 @@
-##About Laravel
+#About Laravel
 Backend for Android app Piura services
 1- Install php >=5.6 mysql
 2- verison de laravel 5.4
