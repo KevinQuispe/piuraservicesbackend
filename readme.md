@@ -7,11 +7,11 @@ Backend for Android app Piura services
 =============================
 librerias for android
 ============================
-1-api 22 verison lolipop
-2-install google play services 
-3-install usb driver
-4-Retrofit 2
-4-httpClient
-5-Gson
-6-butterknife
-7-Api Google Maps
+api 22 verison lolipop
+install google play services 
+install usb driver
+Retrofit 2
+httpClient
+Gson
+butterknife
+Api Google Maps
