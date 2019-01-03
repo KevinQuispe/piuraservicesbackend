@@ -38,7 +38,7 @@
           <br/>
           <div class="form-group">
               <label class="form-control-label col-md-4" for="name"><strong>Telefono:</strong></label>
-              {!!form::text('telefono',null,['id'=>'telefono','class'=>'form-control offset  offset col-sm-12 col-md-6 col-lg-5','placeholder'=>'Ingrese número teléfonico'])!!}
+              {!!form::text('telefono',null,['id'=>'telefono','class'=>'form-control offset  offset col-sm-12 col-md-6 col-lg-5','placeholder'=>'Ingrese número telefónico'])!!}
           </div>
           <br>
           <div class="form-group">
