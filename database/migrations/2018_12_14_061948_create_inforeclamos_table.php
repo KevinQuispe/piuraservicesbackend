@@ -16,7 +16,7 @@ class CreateInforeclamosTable extends Migration
         Schema::create('inforeclamos', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('entidadempresa_id')->unsigned();
-            $table->string('nombre', 100);
+            $table->string('nombre', 255);
             $table->longtext('descripcion');
             $table->timestamps();
             $table->softDeletes();
