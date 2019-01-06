@@ -28,8 +28,8 @@ return [
     | the Mailgun mail service which will provide reliable deliveries.
     |
     */
-
-    'host' => env('MAIL_HOST', 'smtp.mailgun.org'),
+    //smtp.mailgun.org
+    'host' => env('MAIL_HOST', 'smtp.gmail.com'),
 
     /*
     |--------------------------------------------------------------------------
@@ -41,7 +41,7 @@ return [
     | stay compatible with the Mailgun e-mail application by default.
     |
     */
-
+    // 587 / 465
     'port' => env('MAIL_PORT', 587),
 
     /*
@@ -57,7 +57,7 @@ return [
 
     'from' => [
         'address' => env('MAIL_FROM_ADDRESS', 'kquispe07@gmail.com'),
-        'name' => env('MAIL_FROM_NAME', 'No-Replay'),
+        'name' => env('MAIL_FROM_NAME', 'Recuperar contraseña'),
     ],
 
     /*
@@ -71,6 +71,7 @@ return [
     |
     */
 
+    // tls //ssl
     'encryption' => env('MAIL_ENCRYPTION', 'tls'),
 
     /*
