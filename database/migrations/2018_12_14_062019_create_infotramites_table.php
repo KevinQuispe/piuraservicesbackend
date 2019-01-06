@@ -16,7 +16,7 @@ class CreateInfotramitesTable extends Migration
         Schema::create('infotramites', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('entidadempresa_id')->unsigned();
-            $table->string('nombre', 100);
+            $table->string('nombre', 255);
             $table->longtext('descripcion');
             $table->timestamps();
             $table->softDeletes();
