@@ -20,7 +20,7 @@ class CreateEntidadempresaTable extends Migration
             $table->string('telefono',20)->unique();
             $table->string('correo',100);
             $table->string('horario',100);
-            $table->string('webentidad',255);
+            $table->string('webentidad',100);
             $table->timestamps();
             $table->softDeletes();
         });

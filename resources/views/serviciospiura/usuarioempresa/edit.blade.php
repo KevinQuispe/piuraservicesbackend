@@ -19,7 +19,7 @@
               <h2 class="h1 display display">Formulario:</h2>
             </div>
             <div class="card-block">
-              <p>Ingrese los datos del nuevo usuario del sistema.</p>
+              <p>Editar datos del usuario administrador.</p>
               {!!Form::model($usuario, ['action'=>['Consultas\UsuarioEmpresaController@update',$usuario->id],'method'=>'PUT'])!!}
               <div class="form-group">
                 <label class="form-control-label" for="idCargo"><strong>Rol (*):</strong></label>
