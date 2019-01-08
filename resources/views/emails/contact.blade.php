@@ -10,5 +10,8 @@
 </head>
 <body>
     <p><strong>Nombre: </strong>{!!$email!!}</p>
+    <p>Click aqui para recuperar contraseña</p>
+    <a href="www.piuraservices.com/serviciospiura/usuarioempresa/create" target="_blank">Reset Password</a>
+    
 </body>
 </html>
