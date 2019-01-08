@@ -3,9 +3,10 @@
 @section('content')
 <div class="container">
     <div class="row">
+    <!-- @include('serviciospiura.mensajes.mensajes') -->
         <div class="col-md-6 col-md-offset-3">
             <div class="panel panel-primary">
-                <div class="panel-heading">Reset Password</div>
+                <div class="panel-heading">Reestablecer contraseña</div>
 
                 <div class="panel-body">
                     @if (session('status'))
@@ -13,8 +14,8 @@
                             {{ session('status') }}
                         </div>
                     @endif
-
-                    <form class="form-horizontal" method="POST" action="{{ route('password.email') }}">
+                    
+                    <form class="form-horizontal" method="POST" action="{{ route('mail.store') }}">
                         {{ csrf_field() }}
 
                         <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">

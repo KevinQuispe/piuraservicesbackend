@@ -18,6 +18,7 @@ class EmailController extends Controller
     public function index()
     {
         //
+        return view('auth.passwords.email');
     }
 
     /**
@@ -39,14 +40,14 @@ class EmailController extends Controller
     public function store(Request $request)
     {
         //
-        echo ($requet);
         Mail::send('emails.contact', $request->all(), function($msj) {
             $msj->subject('Correo de Contacto');
-            $msj->to('kevinquispe007@gmail.com');
+            $msj->to('javierromualdo2014@gmail.com');
         });
 
-        Session::flash('save', 'Mensaje enviado correctamente');
-        return Redirect::to('/reset');
+        Session::flash('status', 'Mensaje enviado correctamente');
+        return redirect()->action('Admininfo\resetEmail\EmailController@index');
+        // return Redirect::to('/email');
     }
 
     /**
