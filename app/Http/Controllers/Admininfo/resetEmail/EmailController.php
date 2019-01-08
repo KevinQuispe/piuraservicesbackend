@@ -40,13 +40,16 @@ class EmailController extends Controller
     public function store(Request $request)
     {
         //
+        $correo = $request->email;
+        echo $correo;
         Mail::send('emails.contact', $request->all(), function($msj) {
             $msj->subject('Correo de Contacto');
-            $msj->to('javierromualdo2014@gmail.com');
+            
+            $msj->to("javierromualdo2014@gmail.com");
         });
 
         Session::flash('status', 'Mensaje enviado correctamente');
-        return redirect()->action('Admininfo\resetEmail\EmailController@index');
+        // return redirect()->action('Admininfo\resetEmail\EmailController@index');
         // return Redirect::to('/email');
     }
 
