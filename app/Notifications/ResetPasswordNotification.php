@@ -49,7 +49,7 @@ class ResetPasswordNotification extends Notification
         return (new MailMessage)
             ->subject('Solicitud de reestablecimiento de contraseña')
             ->greeting('Hola '.$notifiable->name)
-            ->line('Recibes este email porque se solicitó un reestablecimiento de constraseña para tu cuenta.')
+            ->line('Recibes este email porque se solicitó un reestablecimiento de constraseña para tu cuenta de Piura Services')
             ->action('Reestablecer contraseña', url(config('app.url').route('password.reset', $this->token, false)))
             ->line('Si no realizastes esta petición, puedes ignorar este correo y nada habrá cambiado.')
             ->salutation('¡Saludos!');
