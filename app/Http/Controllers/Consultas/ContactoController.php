@@ -138,6 +138,10 @@ class ContactoController extends Controller
                 'message'=>$e->getMessage()
             ]);
         }
+
+     }
+     public function getpolitica(){
+        return view('serviciospiura.usuarioempresa.politica');
      }
     }
      
