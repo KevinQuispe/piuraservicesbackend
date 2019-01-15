@@ -117,4 +117,5 @@ class TramitesController extends Controller
         Session::flash('delete','Se ha eliminado correctamente');
         return redirect()->action('Admininfo\infotelefonia\TramitesController@index');
     }
+    
 }

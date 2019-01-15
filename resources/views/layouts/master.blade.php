@@ -130,7 +130,7 @@
                       <i class="icon-screen"></i>Web Scraping Eps Grau</a>
                 <ul id="admin-webScarping1" class="collapse list-unstyled ">
                   <li>
-                    <a href="{{ url('serviciospiura/entidadepsgrau/scraping') }}">Información trámites</a>
+                    <a href="{{ url('serviciospiura/entidadepsgrau/scraping') }}">Información con web scraping</a>
                   </li>
               </ul>
             </li>
@@ -138,15 +138,15 @@
                       <i class="icon-screen"></i>Web Scraping Enosa</a>
                 <ul id="admin-webScarping2" class="collapse list-unstyled ">
                   <li>
-                    <a href="{{ url('serviciospiura/entidadenosa/scraping') }}">Información trámites</a>
+                    <a href="{{ url('serviciospiura/entidadenosa/scraping') }}">Información con web scraping</a>
                   </li>
               </ul>
             </li>
             <li><a href="#admin-webScarping3" aria-expanded="false" data-toggle="collapse">
-                      <i class="icon-screen"></i>Web Scraping movistar</a>
+                      <i class="icon-screen"></i>Web Scraping Movistar</a>
                 <ul id="admin-webScarping3" class="collapse list-unstyled ">
                   <li>                    
-                    <a href="{{ url('serviciospiura/scraping/movistar') }}">Información trámites</a>
+                    <a href="{{ url('serviciospiura/scraping/movistar') }}">Información con web scraping</a>
                   </li>
               </ul>
             </li>
