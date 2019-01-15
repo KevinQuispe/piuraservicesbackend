@@ -18,38 +18,48 @@
     <div class="col-lg-12">
     <div class="card miBorder fadeIn animated">
       <div class="card-header d-flex align-items-center">
-        <h3 class="h5 display ion-paperclip fadeIn animated title">Información de Trámites enosa con Web Scraping (Real Time)</h3>
+        <h3 class="h5 display ion-paperclip fadeIn animated title">Información de Trámites ENOSA con Web Scraping (Real Time)</h3>
       </div>
       
       <div class="card-block">
         <table class="table table-striped table-hover table-bordered" id="myTable">
           <thead class="thead-inverse">
-            <tr>
+            <tr class="bg-primary">
               <th class="text-center">#</th>
-              <th>Nombre de Tramite</th>
-              <th>Descripcion</th>
+              <th>Inforrmación</th>
+              <th>Link de Scrapeo</th>
               <th>Acciones</th>
             </tr>
           </thead>
               <tbody>
                 <tr class="fadeIn animated">
                   <th scope="row" class="text-center">1</th>
-                  <td>enoainfo</td>
-                  <td>Nombre2</td>
-                  <td class="text-center">
-                  <a href="" class="btn btn-success btn-sm margenInf fadeIn animated ion-plus-round" title="Copiar">Copiar</a>
-                  <a href="{{url('/scraping/epsgrau')}}" class="btn btn-warning btn-sm margenInf fadeIn animated ion-plus-round" title="Actualizar">Actualizar DB</a>
-                  </td>
-                </tr>
-                </tbody>
+                  <td>Informacion de tramites</td>
+                  <td><a href="">ver informacion de tramites</a></td>                  
+                  <td><a href="">comparar</a></td>
+              </tr>
+                  <tr class="fadeIn animated">
+                  <th scope="row" class="text-center">2</th>
+                  <td>Informacion de reclamos</td>
+                  <td><a href=""> ver informacion de reclamos</a></td>                  
+                  <td><a href="">comparar</a></td>
+                 </tr>
+                <tr>
+              </tbody>
               </table>
               </div>
 
               <section>
-    <h3>Web scraping de tramites</h3>
-    <h4>PHP DOM HTML PARSE</h4> 
-    <!--  -->
+              <h3><center>WEB SCRAPING CON PARSE HTML DOM</center></h3>
+              <ul>
+              <li><a href="">Informacion de tramites</a></li>
+              <li><a href="">Informacion de reclamos</a></li>
+              
+              </ul>
+              <?php
+               include_once('../app/phpdom/simple_html_dom.php');
+           
+              ?>
+           </section>
   </section>
-  </section>
-  
 @endsection

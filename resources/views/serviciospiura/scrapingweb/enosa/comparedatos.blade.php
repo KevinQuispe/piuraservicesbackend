@@ -40,7 +40,7 @@
               <a href="{{url('/serviciospiura/entidadepsgrau/scraping')}}" class="btn btn-info pull btn-sm margenInf fadeIn animated ion-plus-round">Volver</a> &nbsp;     
             
             </td>
-            
+
             </tr>
             
              </tbody>

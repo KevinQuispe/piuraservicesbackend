@@ -84,4 +84,4 @@ Route::resource('serviciospiura/scraping/movistar', 'Scraping\ScrapingMovistarCo
 Route::get('serviciospiura/scraping/compareinfoepsgrau', 'Scraping\ScrapingEpsgrauController@comparescraping');
 Route::get('serviciospiura/scraping/compareinfoenosa', 'Scraping\ScrapingEnosaController@comparescraping');
 Route::get('serviciospiura/scraping/compareinfomovistar', 'Scraping\ScrapingMovistarController@comparescraping');
-
+Route::get('informacion/politicadeprivacidad', 'Consultas\ContactoController@getpolitica');
