@@ -49,17 +49,6 @@
               </table>
               </div>
 
-              <section>
-              <h3><center>WEB SCRAPING CON PARSE HTML DOM</center></h3>
-              <ul>
-              <li><a href="">Informacion de tramites</a></li>
-              <li><a href="">Informacion de reclamos</a></li>
-              
-              </ul>
-              <?php
-               include_once('../app/phpdom/simple_html_dom.php');
-           
-              ?>
-           </section>
+          
   </section>
 @endsection
