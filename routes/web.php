@@ -85,3 +85,9 @@ Route::get('serviciospiura/scraping/compareinfoepsgrau', 'Scraping\ScrapingEpsgr
 Route::get('serviciospiura/scraping/compareinfoenosa', 'Scraping\ScrapingEnosaController@comparescraping');
 Route::get('serviciospiura/scraping/compareinfomovistar', 'Scraping\ScrapingMovistarController@comparescraping');
 Route::get('informacion/politicadeprivacidad', 'Consultas\ContactoController@getpolitica');
+Route::get('serviciospiura/scraping/infoscrapingtramitesmovistar', 'Scraping\ScrapingMovistarController@infoscrapingtramitesmovistar');
+Route::get('serviciospiura/scraping/infoscrapingreclamosmovistar', 'Scraping\ScrapingMovistarController@infoscrapingreclamosmovistar');
+Route::get('serviciospiura/scraping/infoscrapingtramitesepsgrau', 'Scraping\ScrapingEpsGrauController@infoscrapingtramitesepsgrau');
+Route::get('serviciospiura/scraping/infoscrapingreclamosepsgrau', 'Scraping\ScrapingEpsGrauController@infoscrapingreclamosepsgrau');
+Route::get('serviciospiura/scraping/infoscrapingtramitesenosa', 'Scraping\ScrapingEnosaController@infoscrapingtramitesenosa');
+Route::get('serviciospiura/scraping/infoscrapingreclamosenosa', 'Scraping\ScrapingEnosaController@infoscrapingreclamosenosa');

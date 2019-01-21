@@ -82,4 +82,15 @@ class ScrapingEnosaController extends Controller
     {
         //
     }
+
+    public function infoscrapingreclamosenosa()
+    {
+        # code...
+        return view('serviciospiura/scrapingweb/enosa/infoscrapingreclamos');
+    }
+    public function infoscrapingtramitesenosa()
+    {
+        # code...
+        return view('serviciospiura/scrapingweb/enosa/infoscrapingtramites');
+    }
 }
