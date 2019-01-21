@@ -3,9 +3,9 @@
     <head>
       <meta charset='utf-8'>
       <meta name='viewport' content='width=device-width'>
-      <title><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Política de privacidad</font></font></title>
+      <title>Politicas de Privacidad</title>
       <style> body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; padding:1em; } </style>
-    </head>
+    </head> 
     <body>
     <h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Política de privacidad</font></font></h2> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">[Nombre del desarrollador / empresa] creó la aplicación [Nombre de la aplicación] como [aplicación de código abierto / free / freemium / ad-support / commercial]. </font><font style="vertical-align: inherit;">Este SERVICIO es provisto por [Nombre del Desarrollador / Compañía] [sin costo] y está diseñado para ser utilizado tal como está.
                   </font></font></p> <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Esta página se utiliza para informar a los visitantes con respecto a [mi / nuestras] políticas con la recopilación, el uso y la divulgación de información personal si alguien decide utilizar el Servicio [mi / nuestro].
