@@ -88,5 +88,17 @@ class ScrapingEpsGrauController extends Controller
         //$reclamos = InfoReclamos::FindOrFail($id);
         $tramites = \DB::table('infotramites')->where('entidadempresa_id','1')->get();        
         return view('serviciospiura.entidadepsgrau.inforeferencial.comparedatos',compact('tramites'));   
-     }
+    }
+
+    public function infoscrapingtramitesepsgrau()
+    {
+        # code...
+        return view('serviciospiura/scrapingweb/epsgrau/infoscrapingtramites');
+    }
+
+    public function infoscrapingreclamosepsgrau()
+    {
+        # code...
+        return view('serviciospiura/scrapingweb/epsgrau/infoscrapingreclamos');
+    }
 }

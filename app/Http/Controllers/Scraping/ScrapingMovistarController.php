@@ -83,4 +83,21 @@ class ScrapingMovistarController extends Controller
     {
         //
     }
+
+    public function infoscrapingtramitesmovistar()
+    {
+        # code...
+        return view('serviciospiura/scrapingweb/telefonia/infoscrapingtramites');
+    }
+
+    public function infoscrapingreclamosmovistar()
+    {
+        # code...
+        return view('serviciospiura/scrapingweb/telefonia/infoscrapingreclamos');
+    }
+    public function infoscrapingtramitesepsgrau()
+    {
+        # code...
+        return view('serviciospiura/scrapingweb/epsgrau/infoscrapingtramites');
+    }
 }
