@@ -3,7 +3,7 @@
 @section('content')
 <div class="container">
 <section>
-<h3><center>WEB SCRAPING CON TRAMITES-EPS ENOSA <center></h3>
+<h3><center>WEB SCRAPING CON TRÁMITES-EPS ENOSA <center></h3>
 <?php
   include_once('../app/phpdom/simple_html_dom.php');                   
   // Create DOM from URL or file

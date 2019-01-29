@@ -34,21 +34,21 @@
               <tbody>
                 <tr class="fadeIn animated">
                   <th scope="row" class="text-center">1</th>
-                  <td>Informacion de tramites</td>
-                  <td><a href="{{ url('serviciospiura/scraping/infoscrapingtramitesmovistar') }}" target="_self">ver informacion de tramites</a></td>                  
-                  <td><a href="">comparar</a></td>
+                  <td>Informacion de trámites</td>
+                  <td><a href="{{ url('serviciospiura/scraping/infoscrapingtramitesmovistar') }}" target="_self">ver informacion de trámites</a></td>                  
+                  <td><a href="https://epsgrau.pe/webpage/desktop/views" target="_balank">Ver Sitio web</a></td>
               </tr>
                   <tr class="fadeIn animated">
-                  <th scope="row" class="text-center">2</th>
+                  <!-- <th scope="row" class="text-center">2</th>
                   <td>Informacion de reclamos</td>
                   <td><a href="{{ url('serviciospiura/scraping/infoscrapingreclamosmovistar') }}"> ver informacion de reclamos</a></td>                  
-                  <td><a href="">comparar</a></td>
+                  <td><a href="">comparar</a></td> -->
                  </tr>
                 <tr>
               </tbody>
               </table>
               </div>
 
-        
+              
   </section>
 @endsection
