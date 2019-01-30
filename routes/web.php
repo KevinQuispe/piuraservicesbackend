@@ -51,6 +51,8 @@ Route::resource('serviciospiura/empresaentel/listar', 'Admininfo\infoentel\Entel
 Route::resource('serviciospiura/empresaentel/reclamos', 'Admininfo\infoentel\ReclamosController');
 Route::resource('serviciospiura/empresaentel/tramites', 'Admininfo\infoentel\TramitesController');
 Route::resource('serviciospiura/empresaentel/contactos', 'Admininfo\infoentel\ContactosController');
+Route::resource('serviciospiura/empresaentel/scraping', 'Scraping\ScrapingEntelController');
+
 //rutas crud administrar usuarios
 Route::resource('serviciospiura/usuarioempresa', 'Consultas\UsuarioEmpresaController');
 
@@ -80,14 +82,20 @@ Route::get('serviciospiura/empresaentel/getinfotramites/{id}', 'Admininfo\infoen
 Route::resource('serviciospiura/scraping/enosa', 'Scraping\ScrapingEnosaController');
 Route::resource('serviciospiura/scraping/epsgrau', 'Scraping\ScrapingEpsGrauController');
 Route::resource('serviciospiura/scraping/movistar', 'Scraping\ScrapingMovistarController');
+Route::resource('serviciospiura/scraping/entel', 'Scraping\ScrapingEntelController');
+
+//politicas de seguridad
+Route::get('informacion/politicadeprivacidad', 'Consultas\ContactoController@getpolitica');
 //Rutas para hacer la comparacion de informacion con web scraping
 Route::get('serviciospiura/scraping/compareinfoepsgrau', 'Scraping\ScrapingEpsgrauController@comparescraping');
 Route::get('serviciospiura/scraping/compareinfoenosa', 'Scraping\ScrapingEnosaController@comparescraping');
 Route::get('serviciospiura/scraping/compareinfomovistar', 'Scraping\ScrapingMovistarController@comparescraping');
-Route::get('informacion/politicadeprivacidad', 'Consultas\ContactoController@getpolitica');
 Route::get('serviciospiura/scraping/infoscrapingtramitesmovistar', 'Scraping\ScrapingMovistarController@infoscrapingtramitesmovistar');
 Route::get('serviciospiura/scraping/infoscrapingreclamosmovistar', 'Scraping\ScrapingMovistarController@infoscrapingreclamosmovistar');
 Route::get('serviciospiura/scraping/infoscrapingtramitesepsgrau', 'Scraping\ScrapingEpsGrauController@infoscrapingtramitesepsgrau');
 Route::get('serviciospiura/scraping/infoscrapingreclamosepsgrau', 'Scraping\ScrapingEpsGrauController@infoscrapingreclamosepsgrau');
 Route::get('serviciospiura/scraping/infoscrapingtramitesenosa', 'Scraping\ScrapingEnosaController@infoscrapingtramitesenosa');
 Route::get('serviciospiura/scraping/infoscrapingreclamosenosa', 'Scraping\ScrapingEnosaController@infoscrapingreclamosenosa');
+
+Route::get('serviciospiura/scraping/infoscrapingtramitesentel', 'Scraping\ScrapingEntelController@infoscrapingtramitesentel');
+Route::get('serviciospiura/scraping/infoscrapingreclamosentel', 'Scraping\ScrapingEntelController@infoscrapingreclamosentel');

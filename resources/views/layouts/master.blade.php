@@ -126,15 +126,16 @@
           <ul class="list-unstyled">
             <!--Todo para admin-->
             @if (Auth::user()->rol_id == 1)
-            <li><a href="#admin-webScarping1" aria-expanded="false" data-toggle="collapse">
-                      <i class="icon-screen"></i>Web Scraping Eps Grau</a>
+            <!-- <li><a href="#admin-webScarping1" aria-expanded="false" data-toggle="collapse">
+                <i class="icon-screen"></i>Web Scraping Eps Grau</a>
                 <ul id="admin-webScarping1" class="collapse list-unstyled ">
                   <li>
                     <a href="{{ url('serviciospiura/entidadepsgrau/scraping') }}">Información con web scraping</a>
                   </li>
               </ul>
-            </li>
-            <li><a href="#admin-webScarping2" aria-expanded="false" data-toggle="collapse">
+            </li> -->
+            <li>
+            <a href="#admin-webScarping2" aria-expanded="false" data-toggle="collapse">
                       <i class="icon-screen"></i>Web Scraping Enosa</a>
                 <ul id="admin-webScarping2" class="collapse list-unstyled ">
                   <li>
@@ -150,30 +151,47 @@
                   </li>
               </ul>
             </li>
+            <li><a href="#admin-webScarping5" aria-expanded="false" data-toggle="collapse">
+                <i class="icon-screen"></i>Web Scraping Entel</a>
+                <ul id="admin-webScarping5" class="collapse list-unstyled ">
+                  <li>
+                    <a href="{{ url('serviciospiura/empresaentel/scraping') }}">Información con web scraping</a>
+                  </li>
+              </ul>
+            </li>
             @elseif (Auth::user()->rol_id == 2)
-            <li><a href="#admin-webScarping1" aria-expanded="false" data-toggle="collapse">
+            <!-- <li><a href="#admin-webScarping1" aria-expanded="false" data-toggle="collapse">
                       <i class="icon-screen"></i>Web Scraping Eps</a>
                 <ul id="admin-webScarping1" class="collapse list-unstyled ">
                   <li>
-                    <a href="{{ url('serviciospiura/entidadepsgrau/scraping') }}">Información trámites</a>
+                    <a href="{{ url('serviciospiura/entidadepsgrau/scraping') }}">Información con web scraping</a>
                   </li>
-              </ul>
+              </ul> -->
             </li>
             @elseif (Auth::user()->rol_id == 3)
             <li><a href="#admin-webScarping2" aria-expanded="false" data-toggle="collapse">
                       <i class="icon-screen"></i>Web Scraping Enosa</a>
                 <ul id="admin-webScarping2" class="collapse list-unstyled ">
                   <li>
-                    <a href="{{ url('serviciospiura/entidadenosa/scraping') }}">Información trámites</a>
+                    <a href="{{ url('serviciospiura/entidadenosa/scraping') }}">Información con web scraping</a>
                   </li>
               </ul>
             </li>
             @elseif (Auth::user()->rol_id == 4)
-            <li><a href="#admin-webScarping3" aria-expanded="false" data-toggle="collapse">
+            <li><a href="#admin-webScarping1" aria-expanded="false" data-toggle="collapse">
                       <i class="icon-screen"></i>Web Scraping Movistar</a>
-                <ul id="admin-webScarping3" class="collapse list-unstyled ">
+                <ul id="admin-webScarping1" class="collapse list-unstyled ">
                   <li>                    
-                    <a href="{{ url('serviciospiura/entidadmovistar/scraping') }}">Información trámites</a>
+                    <a href="{{ url('serviciospiura/entidadmovistar/scraping') }}">Información con web scraping</a>
+                  </li>
+              </ul>
+            </li>
+            @elseif (Auth::user()->rol_id == 6)
+            <li><a href="#admin-webScarping5" aria-expanded="false" data-toggle="collapse">
+                      <i class="icon-screen"></i>Web Scraping Entel</a>
+                <ul id="admin-webScarping5" class="collapse list-unstyled ">
+                  <li>                    
+                    <a href="{{ url('serviciospiura/empresaentel/scraping') }}">Información con web scrping</a>
                   </li>
               </ul>
             </li>
