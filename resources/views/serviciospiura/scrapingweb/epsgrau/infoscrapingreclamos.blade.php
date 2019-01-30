@@ -7,9 +7,9 @@
 <?php
   include_once('../app/phpdom/simple_html_dom.php');                   
   // Create DOM from URL or file
-  $html = file_get_html('https://epsgrau.pe/webpage/desktop/views/procedimiento-atencion.html?im=8?ip=8?id=57?im=101');
-  $infoeps= file_get_html ( 'https://epsgrau.pe/webpage/desktop/views/procedimiento-atencion.html?im=8?ip=8?id=57?im=101' ) -> plaintext ;
-  echo $infoeps;           
+  $html = file_get_html('https://epsgrau.pe/webpage/desktop/views/');
+  //$infoeps= file_get_html ( 'https://epsgrau.pe/webpage/desktop/views/procedimiento-atencion.html?im=8?ip=8?id=57?im=101' ) -> plaintext ;
+  echo $html;           
   ?>
 </section>
 </div>

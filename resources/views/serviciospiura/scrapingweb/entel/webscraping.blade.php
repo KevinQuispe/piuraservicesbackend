@@ -18,7 +18,7 @@
     <div class="col-lg-12">
     <div class="card miBorder fadeIn animated">
       <div class="card-header d-flex align-items-center">
-        <h3 class="h5 display ion-paperclip fadeIn animated title">Información de Trámites EPS GRAU S.A con Web Scraping (Real Time)</h3>
+        <h3 class="h5 display ion-paperclip fadeIn animated title">Información de Reclamos Entel (Real Time)</h3>
       </div>
       
       <div class="card-block">
@@ -34,21 +34,13 @@
               <tbody>
                 <tr class="fadeIn animated">
                   <th scope="row" class="text-center">1</th>
-                  <td>Informacion de tramites</td>
-                  <td><a href="{{ url('serviciospiura/scraping/infoscrapingtramitesepsgrau') }}">ver informacion de tramites</a></td>                  
-                  <td><a href="">comparar</a></td>
-              </tr>
-                  <tr class="fadeIn animated">
-                  <th scope="row" class="text-center">2</th>
                   <td>Informacion de reclamos</td>
-                  <td><a href="{{ url('serviciospiura/scraping/infoscrapingreclamosepsgrau') }}"> ver informacion de reclamos</a></td>                  
-                  <td><a href="">comparar</a></td>
-                 </tr>
-                <tr>
+                  <td><a href="{{ url('serviciospiura/scraping/infoscrapingreclamosentel') }}">ver informacion de reclamos</a></td>                  
+                  <td><a href="http://www.entel.pe/personas/ayuda-y-soporte/reclamos-y-solicitudes/" target="_blank">Ver sitio web</a></td>
+              </tr>
+              
               </tbody>
               </table>
-              </div>
-
-          
+              </div>     
   </section>
 @endsection
