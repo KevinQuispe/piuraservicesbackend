@@ -3,7 +3,7 @@
 @section('content')
 <div class="container">
 <section>
-<h3><center>WEB SCRAPING CON TRAMITES-ENTEL <center></h3>
+<h3><center>WEB SCRAPING INFORMACIÓN TRAMITES-ENTEL <center></h3>
 <hr>
 <script>
   function printDiv(divName) {
@@ -17,7 +17,7 @@
 <input class="btn btn-danger pull-right" type="button" onclick="printDiv('printableArea')" value="Guardar PDF" />
     
     <div id="printableArea">
-      <h3>Información de Trámites ENOSA</h3>
+      <h3>Información de Trámites ENTEL</h3>
       <hr>
 <?php
   include_once('../app/phpdom/simple_html_dom.php');                   
