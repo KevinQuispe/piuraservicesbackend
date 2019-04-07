@@ -24,9 +24,22 @@
               <?php
                 include_once('../app/phpdom/simple_html_dom.php');                   
                 // Create DOM from URL or file
+                //tramites
                 $html = file_get_html('http://www.movistar.com.pe/');
+               
+                $htmltramites = file_get_html('http://www.movistar.com.pe/atencion-al-cliente/tramites/renovacion-equipos-postpago');
                 $infomovistar= file_get_html ( 'http://www.movistar.com.pe/' ) -> plaintext ;
-                echo $infomovistar;           
+                // echo $htmltramites;   
+                
+                $titulosTabs = array();
+                foreach($htmltramites->find('div[class$="portlet-body"] ul li a') as $titulo) {
+                  $titulosTabs[] = $titulo->plaintext;
+                }
+                
+                print_r("<h2 style='color: blue'>".$titulosTabs[0]."</h2>");
+                print_r("<h2 style='color: blue'>".$titulosTabs[1]."</h2>");
+                print_r("<h2 style='color: blue'>".$titulosTabs[2]."</h2>");
+                print_r("<h2 style='color: blue'>".$titulosTabs[3]."</h2>");
                 ?>
            </section>
     
