@@ -97,8 +97,16 @@
      }
      print_r($listageneral);  
      print_r($listageneral[23]);  
+
+     print_r("<p>QUEJAS</p>");
+     $listaplazos = array();
+    foreach($htmlreclamos->find(".tabs-tabla .clearfix li a") as $titulo) {
+      $listaplazos[] = $titulo->plaintext;
+     }
+     print_r($listaplazos);  
+     //print_r($listaplazos[23]); 
   ?>
-  
+
 </section>
 </div>
 @endsection
