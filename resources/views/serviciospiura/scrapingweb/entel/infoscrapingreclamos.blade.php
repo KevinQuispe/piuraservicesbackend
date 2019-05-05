@@ -87,6 +87,7 @@
    foreach($htmlreclamos->find(".contenido-general h2") as $titulo) {
      $listaapelacion[] = $titulo->plaintext;
     }
+    print_r("<p>=======mis cambios========</p>");
     print_r($listaapelacion);
   //
     print_r("<p>".$listaapelacion[1]."</p>");
@@ -95,6 +96,7 @@
     foreach($htmlreclamos->find(".contenido-general ul li") as $titulo) {
       $listageneral[] = $titulo->plaintext;
      }
+   
      print_r($listageneral);  
      print_r($listageneral[23]);  
 
@@ -106,7 +108,6 @@
      print_r($listaplazos);  
      //print_r($listaplazos[23]); 
   ?>
-
 </section>
 </div>
 @endsection
