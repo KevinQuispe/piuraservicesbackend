@@ -38,7 +38,7 @@
                   <td><a href="{{ url('serviciospiura/scraping/infoscrapingreclamosentel') }}">ver informacion de reclamos</a></td>                  
                   <td><a href="http://www.entel.pe/personas/ayuda-y-soporte/reclamos-y-solicitudes/" target="_blank">Ver sitio web</a></td>
               </tr>
-
+              
               </tbody>
               </table>
               </div>     
