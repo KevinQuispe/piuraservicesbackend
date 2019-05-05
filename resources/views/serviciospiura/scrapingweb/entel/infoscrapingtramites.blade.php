@@ -22,7 +22,7 @@
 <?php
   include_once('../app/phpdom/simple_html_dom.php');                   
   // Create DOM from URL or file
-  $entel= file_get_html ( 'http://www.entel.pe/personas/ayuda-y-soporte/reclamos-y-solicitudes/' ) -> plaintext ;
+  $entel= file_get_html('http://www.entel.pe/personas/ayuda-y-soporte/reclamos-y-solicitudes/' ) -> plaintext ;
   echo $entel;           
   ?>
 </section>

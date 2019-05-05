@@ -81,32 +81,44 @@
   foreach($htmlreclamos->find("bloque-der ul li p") as $titulo) {
     $tituloapelacion[] = $titulo->plaintext;
    }
-   //print_r("<h3>".$tituloapelacion[0]."</h3>");
-   print_r($tituloapelacion);
+   //lista apelacion
    $listaapelacion = array();
    foreach($htmlreclamos->find(".contenido-general h2") as $titulo) {
      $listaapelacion[] = $titulo->plaintext;
-    }
+    }  
+    //no estas de acuerdo
     print_r("<p>=======mis cambios========</p>");
-    print_r($listaapelacion);
-  //
-    print_r("<p>".$listaapelacion[1]."</p>");
-    print_r("<p>".$listaapelacion[2]."</p>");
+    print_r("<b><p>".$listaapelacion[1]."</p></b>");
     $listageneral = array();
     foreach($htmlreclamos->find(".contenido-general ul li") as $titulo) {
       $listageneral[] = $titulo->plaintext;
      }
-   
-     print_r($listageneral);  
-     print_r($listageneral[23]);  
+     //responder a los siguientes plazos
+     print_r("<ol>.$listageneral[23].</ol>");
+     print_r("<b><p>".$listaapelacion[2]."</p></b>");
+     print_r("<ol>.$listageneral[24].</ol>");
+     print_r("<ol>.$listageneral[26].</ol>");
 
-     print_r("<p>QUEJAS</p>");
+     print_r("<p>necesitas solucionar</p>");
      $listaplazos = array();
     foreach($htmlreclamos->find(".tabs-tabla .clearfix li a") as $titulo) {
       $listaplazos[] = $titulo->plaintext;
      }
-     print_r($listaplazos);  
-     //print_r($listaplazos[23]); 
+     print_r("<p>QUEJAS</p>");
+     $quejas = array();
+     foreach($htmlreclamos->find(" .tabs-tabla .clearfix li a") as $titulo) {
+       $quejas[] = $titulo->plaintext;
+      }
+      print_r("<b><p>".$quejas[2]."</p></b>");
+       
+      //lista items quejas
+      $listaquejas = array();
+      foreach($htmlreclamos->find(" .tabs-tabla .clearfix li a") as $titulo) {
+        $listaquejas[] = $titulo->plaintext;
+       }
+       print_r("<b><p>".$quejas[2]."</p></b>");
+      print_r($quejas);  
+     
   ?>
 </section>
 </div>
