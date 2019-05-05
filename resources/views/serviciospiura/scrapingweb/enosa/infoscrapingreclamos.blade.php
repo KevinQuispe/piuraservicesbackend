@@ -9,7 +9,7 @@
   // Create DOM from URL or file
   // $html = file_get_html('http://www.distriluz.com.pe/enosa//');
   // $infoenosa= file_get_html ( 'http://www.distriluz.com.pe/enosa/' ) -> plaintext ;
-  // echo $infoenosa;   
+  // echo $infoenosa;
   ?>
 </section>
 </div>

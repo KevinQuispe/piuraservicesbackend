@@ -23,9 +23,10 @@
       <hr>
               <?php
                 include_once('../app/phpdom/simple_html_dom.php');                   
-                // Create DOM from URL or file
-                $html = file_get_html('http://www.movistar.com.pe/');
-                $infomovistar= file_get_html ( 'http://www.movistar.com.pe/' ) -> plaintext ;
+                //reclamos y quejas
+                $html = file_get_html('https://webmovtotalreclamomovil.serviciosmovistar.com/');
+                 //tramites
+                $infomovistar= file_get_html ( 'http://www.movistar.com.pe/atencion-al-cliente/tramites' ) -> plaintext ;
                 echo $infomovistar;           
                 ?>
            </section>
