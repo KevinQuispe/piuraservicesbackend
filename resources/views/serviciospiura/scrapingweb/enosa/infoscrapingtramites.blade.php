@@ -26,6 +26,7 @@
   //$html = file_get_html('https://www.distriluz.com.pe/enosa/index.php/servicios');  
   $html = file_get_html('https://www.distriluz.com.pe/enosa/index.php/servicios-enosa');
 
+  //arreglo para los p
   $titulos = array();
   foreach($html->find('.row p') as $titulo) {
     $titulos[] = $titulo->plaintext;
