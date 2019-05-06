@@ -36,14 +36,11 @@
                   <th scope="row" class="text-center">1</th>
                   <td>Informacion de trámites</td>
                   <td><a href="{{ url('serviciospiura/scraping/infoscrapingtramitesenosa') }}">Ver informacion de tramites</a></td>                  
-                  <td><a href="http://www.distriluz.com.pe/enosa/index.php/servicios" target="_blank">Ver sitio web</a></td>
+                  <td><a href="http://www.distriluz.com.pe/enosa/index.php" target="_blank">Ver sitio web</a></td>
               </tr>
                   <tr class="fadeIn animated">
-                  <!-- <th scope="row" class="text-center">2</th> -->
-                  <!-- <td>Informacion de reclamos</td> -->
-                   <!-- <td><a href="{{ url('serviciospiura/scraping/infoscrapingreclamosenosa') }}"> ver informacion de reclamos</a></td>                   -->
-                  <!-- <td><a href="http://www.distriluz.com.pe/enosa/index.php/servicios" target="_">Sitio web</a></td> -->
-                 </tr>
+                  
+                  </tr>
                 <tr>
               </tbody>
               </table>
