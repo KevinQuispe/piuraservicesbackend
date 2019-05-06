@@ -62,7 +62,7 @@
   foreach($htmlreclamos->find(".bloque-der .aco-caja p") as $titulo) {
     $pasos[] = $titulo->plaintext;
    }
-  //print_r($pasos);
+  // print_r($pasos);
   print_r("<br>");
   $subTitulosPasos = array();
   foreach($htmlreclamos->find(".bloque-der h2") as $titulo) {
@@ -76,6 +76,14 @@
   print_r("<li>".$subTitulosPasos[2]."<p>".$pasos[8]."</p><ul><li>".$listas[6]."</li><li>".
   $listas[7]."</ul><p>".$pasos[9]."</p><ul><li>".$listas[9]."</li><li>".$listas[10]."</li></ul></ol>");
   
+  # O necesitas solucionar algo sobre:
+  print_r("<h2 style='color:orange'>".$tituloTabs[1]."</h2>"); 
+  print_r("<ul><li>".$listas[11]."</li><li>".$listas[12]."</li><li>".$listas[13].
+  $listas[14]."</li><li>".$listas[15]."</li><li>".$listas[16].
+  $listas[17]."</li><li>".$listas[18]."</li><li>".$listas[19].
+  $listas[20]."</li></ul>");
+  print_r("<ol><li>".$pasos[11]."</li>");
+  print_r("<li>".$pasos[13]."</li></ol>");
   //si no estas de acuerdo
   $tituloapelacion = array();
   foreach($htmlreclamos->find("bloque-der ul li p") as $titulo) {
@@ -87,7 +95,7 @@
      $listaapelacion[] = $titulo->plaintext;
     }  
     //no estas de acuerdo
-    print_r("<p>=======mis cambios========</p>");
+    // print_r("<p>=======mis cambios========</p>");
     print_r("<b><p>".$listaapelacion[1]."</p></b>");
     $listageneral = array();
     foreach($htmlreclamos->find(".contenido-general ul li") as $titulo) {
@@ -99,12 +107,12 @@
      print_r("<ol>.$listageneral[24].</ol>");
      print_r("<ol>.$listageneral[26].</ol>");
 
-     print_r("<p>necesitas solucionar</p>");
+    //  print_r("<p>necesitas solucionar</p>");
      $listaplazos = array();
     foreach($htmlreclamos->find(".tabs-tabla .clearfix li a") as $titulo) {
       $listaplazos[] = $titulo->plaintext;
      }
-     print_r("<p>QUEJAS</p>");
+    //  print_r("<p>QUEJAS</p>");
      $quejas = array();
      foreach($htmlreclamos->find(" .tabs-tabla .clearfix li a") as $titulo) {
        $quejas[] = $titulo->plaintext;
@@ -116,9 +124,51 @@
       foreach($htmlreclamos->find(" .tabs-tabla .clearfix li a") as $titulo) {
         $listaquejas[] = $titulo->plaintext;
        }
-       print_r("<b><p>".$quejas[2]."</p></b>");
-      print_r($quejas);  
+      //  print_r("<b><p>".$quejas[2]."</p></b>");
+      // print_r($quejas);  
+
+      //lista items quejas
+      $tituloqueja = array();
+      foreach($htmlreclamos->find(".tc-item .texto") as $titulo) {
+        $tituloqueja[] = $titulo->plaintext;
+       }
+       print_r("<p>".$tituloqueja[6]."</p>");
+      // print_r($tituloqueja);
+
+      $listaqueja = array();
+      foreach($htmlreclamos->find(".tc-item ul li") as $titulo) {
+        $listaqueja[] = $titulo->plaintext;
+       }
+      // print_r($listaqueja);
+      print_r("<ul><li>".$listaqueja[21]."</li><li>".$listaqueja[22]."</li><li>".
+      $listaqueja[23]."</li><li>".$listaqueja[24]."</li></ul>");
      
+      $etiquetaA = array();
+      foreach($htmlreclamos->find(".acordeon a") as $titulo) {
+        $etiquetaA[] = $titulo->plaintext;
+       }
+      // print_r($etiquetaA);
+
+      $etiquetaAContenido = array();
+      foreach($htmlreclamos->find(".acordeon .aco-contenido") as $titulo) {
+        $etiquetaAContenido[] = $titulo->plaintext;
+       }
+      // print_r($etiquetaAContenido);
+
+      $etiquetaAContenidoLista = array();
+      foreach($htmlreclamos->find(".acordeon .aco-contenido ul li") as $titulo) {
+        $etiquetaAContenidoLista[] = $titulo->plaintext;
+       }
+      // print_r($etiquetaAContenidoLista);
+
+      print_r("<p><b>".$etiquetaA[0]."</b></p>");
+      print_r("<p>".$etiquetaAContenido[0]."</p>");
+      print_r("<p><b>".$etiquetaA[2]."</b></p>");
+      print_r("<p>".$etiquetaAContenido[1]."</p>");
+      print_r("<p><b>".$etiquetaA[3]."</b></p>");
+      print_r("<ul><li>".$etiquetaAContenidoLista[0]."</li><li>".$etiquetaAContenidoLista[1]."</li><li>".
+      $etiquetaAContenidoLista[2]."</li><li>".$etiquetaAContenidoLista[3]."</li><li>".$etiquetaAContenidoLista[4].
+      "</li><li>".$etiquetaAContenidoLista[5]."</li></ul>");
   ?>
 </section>
 </div>
