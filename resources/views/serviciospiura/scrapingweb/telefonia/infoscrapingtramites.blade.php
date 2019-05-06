@@ -19,7 +19,9 @@
 <input class="btn btn-danger pull-right" type="button" onclick="printDiv('printableArea')" value="Guardar PDF" />
     
     <div id="printableArea">
-      <h3>Información de trámites MOVISTAR</h3>
+    <div id="printableArea">
+      <h3>Información de trámites MOVISTAR<a href="http://www.movistar.com.pe/atencion-al-cliente/tramites/renovacion-equipos-postpago" target="_blank">-Ver Sitio web</a></h3>
+      <hr>
       <hr>
               <?php
                 include_once('../app/phpdom/simple_html_dom.php');                   
